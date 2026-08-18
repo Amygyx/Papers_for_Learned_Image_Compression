@@ -33,11 +33,13 @@ Surveys, evaluation resources, and standardization milestones for neural image c
 | Year | Paper | First author | Venue | Tags | Code / project |
 | :--: | --- | --- | --- | --- | :--: |
 | 2026 | [An Overview of the JPEG AI Learning-Based Image Coding Standard](https://doi.org/10.1109/TCSVT.2025.3613244) | S. Esenlik | IEEE TCSVT | `transform` · `standardization` · `practical` | [link](https://jpeg.org/jpegai/) |
+| 2024 | [A comprehensive survey on image encryption: Taxonomy, challenges, and future directions](https://www.sciencedirect.com/science/article/pii/S0960077923012638) | Morteza SaberiKamarposhti | Chaos, Solitons and Fractals |  | — |
 | 2024 | [JPEG AI: The First International Standard for Image Coding Based on an End-to-End Learning-Based Approach](https://doi.org/10.1109/MMUL.2024.3485255) | E. Alshina | IEEE MultiMedia | `transform` · `standardization` · `practical` | [link](https://jpeg.org/jpegai/) |
 | 2023 | [An Introduction to Neural Data Compression](https://www.nowpublishers.com/article/Details/CGV-107) | Yibo Yang | Foundations and Trends in Computer Graphics and Vision | `transform` · `benchmark` | — |
 | 2023 | [Learning-driven lossy image compression: A comprehensive survey](https://doi.org/10.1016/j.engappai.2023.106361) | Sonain Jamil | Engineering Applications of Artificial Intelligence | `transform` · `benchmark` | — |
 | 2022 | [Deep Architectures for Image Compression: A Critical Review](https://doi.org/10.1016/j.sigpro.2021.108346) | Dipti Mishra | Signal Processing | `transform` · `benchmark` | — |
 | 2022 | [Learning End-to-End Lossy Image Compression: A Benchmark](https://arxiv.org/abs/2002.03711) | Yueyu Hu | IEEE TPAMI | `transform` · `benchmark` | — |
+| 2019 | [Image and Video Compression With Neural Networks: A Review](https://ieeexplore.ieee.org/document/8693636) | Siwei Ma | IEEE TCSVT | `transform` · `benchmark` | — |
 
 ## Lossless & Near-lossless Compression
 
