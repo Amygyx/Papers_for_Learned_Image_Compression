@@ -890,17 +890,3 @@ papers:
     focus: [quantization, optimization]
     capability: []
 
-  # Selective preprints with public code
-  - id: ugdiff-2024
-    title: 'High Frequency Matters: Uncertainty Guided Image Compression with Wavelet Diffusion'
-    first_author: Juan Song
-    year: 2024
-    venue: arXiv
-    status: preprint
-    paper_url: https://arxiv.org/abs/2407.12538
-    project_url: https://github.com/hejiaxiang1/Wavelet-Diffusion
-    section: emerging
-    objective: perception
-    paradigm: [diffusion]
-    focus: [transform, optimization]
-    capability: [content-adaptive]
