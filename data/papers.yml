@@ -421,6 +421,49 @@ papers:
     method: DNA
     legacy_order: 3
 
+  # Additional lossless coding foundations
+  - id: bit-swap-2019
+    title: 'Bit-Swap: Recursive Bits-Back Coding for Lossless Compression with Hierarchical Latent Variables'
+    first_author: Friso Kingma
+    year: 2019
+    venue: ICML
+    status: published
+    paper_url: https://proceedings.mlr.press/v97/kingma19a.html
+    project_url: https://github.com/fhkingma/bitswap
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [entropy-model]
+    capability: []
+
+  - id: local-bits-back-2019
+    title: Compression with Flows via Local Bits-Back Coding
+    first_author: Jonathan Ho
+    year: 2019
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2019/hash/f6e794a75c5d51de081dbefa224304f9-Abstract.html
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: bb-ans-2019
+    title: Practical Lossless Compression with Latent Variables using Bits Back Coding
+    first_author: James Townsend
+    year: 2019
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=ryE98iR5tm
+    project_url: https://github.com/bits-back/bits-back
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
   # Lossless and near-lossless compression
   - id: llm-lossless-next-pixel-2025
     title: 'Large Language Models for Lossless Image Compression: Next-Pixel Prediction in Language Space is All You Need'
@@ -1023,6 +1066,133 @@ papers:
     objective: distortion
     paradigm: [vq]
     focus: [quantization]
+    capability: []
+
+  # Additional perception-oriented coding
+  - id: turbo-ddcm-2026
+    title: 'Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression'
+    first_author: Amit Vaisman
+    year: 2026
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=eIF1QvC94Z
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [optimization]
+    capability: [low-complexity, practical]
+
+  - id: oscar-2025
+    title: 'OSCAR: One-Step Diffusion Codec Across Multiple Bit-rates'
+    first_author: Jinpei Guo
+    year: 2025
+    venue: NeurIPS
+    status: published
+    paper_url: https://openreview.net/forum?id=uodE9CAXaF
+    project_url: https://github.com/jp-guo/OSCAR
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: [variable-rate, low-complexity]
+
+  - id: onedc-2025
+    title: One-Step Diffusion-Based Image Compression with Semantic Distillation
+    first_author: Naifu Xue
+    year: 2025
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/352a67c085e607acdcfc0076899750f4-Abstract-Conference.html
+    project_url: https://onedc-codec.github.io/
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, quantization, optimization]
+    capability: [low-complexity]
+
+  - id: stablecodec-2025
+    title: 'StableCodec: Taming One-Step Diffusion for Extreme Image Compression'
+    first_author: Tianyu Zhang
+    year: 2025
+    venue: ICCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_StableCodec_Taming_One-Step_Diffusion_for_Extreme_Image_Compression_ICCV_2025_paper.pdf
+    project_url: https://github.com/LuizScarlet/StableCodec
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [transform, optimization]
+    capability: [low-complexity, practical]
+
+  - id: relic-uq-2025
+    title: Bridging the Gap between Gaussian Diffusion Models and Universal Quantization for Image Compression
+    first_author: Lucas Relic
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/papers/Relic_Bridging_the_Gap_between_Gaussian_Diffusion_Models_and_Universal_Quantization_CVPR_2025_paper.pdf
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: []
+
+  - id: ddcm-2025
+    title: Compressed Image Generation with Denoising Diffusion Codebook Models
+    first_author: Guy Ohayon
+    year: 2025
+    venue: ICML
+    status: published
+    paper_url: https://icml.cc/virtual/2025/poster/44687
+    project_url: https://github.com/DDCM-2025/ddcm-compressed-image-generation
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: []
+
+  - id: diffc-2025
+    title: Lossy Compression with Pretrained Diffusion Models
+    first_author: Jeremy Vonderfecht
+    year: 2025
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=raUnLe0Z04
+    project_url: https://github.com/JeremyIV/diffc
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [entropy-model, optimization]
+    capability: [practical]
+
+  - id: taco-2024
+    title: Neural Image Compression with Text-guided Encoding for both Pixel-level and Perceptual Fidelity
+    first_author: Hagyeong Lee
+    year: 2024
+    venue: ICML
+    status: published
+    paper_url: https://taco-nic.github.io/
+    project_url: https://taco-nic.github.io/
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: []
+
+  - id: ms-illm-2023
+    title: Improving Statistical Fidelity for Neural Image Compression with Implicit Local Likelihood Models
+    first_author: Matthew Muckley
+    year: 2023
+    venue: ICML
+    status: published
+    paper_url: https://icml.cc/virtual/2023/poster/24565
+    project_url: https://github.com/facebookresearch/NeuralCompression
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [optimization]
     capability: []
 
   # Lossy, perception-oriented coding
