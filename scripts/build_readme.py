@@ -340,7 +340,11 @@ def render(data: dict, papers: list[dict]) -> str:
         else:
             section_papers = sorted(
                 section_papers,
-                key=lambda paper: (-paper["year"], paper["title"].casefold()),
+                key=lambda paper: (
+                    0 if paper["year"] == 2026 and paper["venue"] == "ECCV" else 1,
+                    -paper["year"],
+                    paper["title"].casefold(),
+                ),
             )
         if section == "other-tasks-encryption":
             lines.extend(
