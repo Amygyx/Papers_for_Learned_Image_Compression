@@ -1069,6 +1069,20 @@ papers:
     capability: []
 
   # Additional perception-oriented coding
+  - id: cod-lite-2026
+    title: 'CoD-Lite: Real-Time Diffusion-Based Generative Image Compression'
+    first_author: Bin Li
+    year: 2026
+    venue: ICML
+    status: published
+    paper_url: https://icml.cc/virtual/2026/poster/63715
+    project_url: https://github.com/microsoft/GenCodec/tree/main/CoD_Lite
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: [low-complexity, practical]
+
   - id: turbo-ddcm-2026
     title: 'Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression'
     first_author: Amit Vaisman
