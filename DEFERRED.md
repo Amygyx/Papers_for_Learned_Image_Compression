@@ -36,6 +36,7 @@ The previous encryption section was removed because encryption is not neural ima
 
 These preprints did not meet the current main-list rule of a verified publication or public-code emerging work at the curation cutoff:
 
+- Large Language Model for Lossless Image Compression with Visual Prompts — ICLR 2025 submission, not accepted; no public code
 - Approximately Invertible Neural Network for Learned Image Compression
 - Rethinking Learned Image Compression: Context is All You Need
 - Bi-Level Spatial and Channel-aware Transformer for Learned Image Compression
