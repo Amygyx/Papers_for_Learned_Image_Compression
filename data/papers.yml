@@ -19,34 +19,6 @@ papers:
     focus: [entropy-model]
     capability: []
 
-  - id: glc-video-2025
-    title: Generative Latent Coding for Ultra-Low Bitrate Image and Video Compression
-    first_author: Linfeng Qi
-    year: 2025
-    venue: IEEE TCSVT
-    status: published
-    paper_url: https://doi.org/10.1109/TCSVT.2025.3571944
-    project_url: https://github.com/jzyustc/GLC
-    section: other-tasks-video
-    objective: perception
-    paradigm: [vq]
-    focus: [transform, quantization]
-    capability: []
-
-  - id: nvc-1b-2026
-    title: 'NVC-1B: Scaling up Neural Video Coding Models'
-    first_author: Chuanbo Tang
-    year: 2026
-    venue: IEEE TPAMI
-    status: published
-    paper_url: https://doi.org/10.1109/TPAMI.2026.3689998
-    project_url: null
-    section: other-tasks-video
-    objective: distortion
-    paradigm: [transform]
-    focus: [transform, entropy-model]
-    capability: []
-
   # Additional formally published top-conference papers from the recent backlog
   - id: glc-2024
     title: Generative Latent Coding for Ultra-Low Bitrate Image Compression
