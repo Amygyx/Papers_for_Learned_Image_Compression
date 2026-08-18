@@ -123,6 +123,7 @@ SHORT_NAMES = {
     "deephq-2026": "DeepHQ",
     "causal-contextual-prediction-2022": "CCP",
     "diffeic-2025": "DiffEIC",
+    "rdeic-2025": "RDEIC",
     "glc-2024": "GLC",
     "segpic-2024": "SegPIC",
     "perco-2024": "PerCo",
