@@ -296,23 +296,6 @@ def render(data: dict, papers: list[dict]) -> str:
             )
         lines.append("")
 
-    lines.extend(
-        [
-            "## Contribution policy",
-            "",
-            "Accepted conference and journal papers are the default for the main list. A preprint is "
-            "eligible only when it has public code and a clearly differentiated compression contribution. "
-            "Please edit `data/papers.yml`, then run:",
-            "",
-            "```bash",
-            "python scripts/build_readme.py",
-            "python scripts/build_readme.py --check",
-            "```",
-            "",
-            "See [CONTRIBUTING.md](CONTRIBUTING.md) for the schema and review checklist.",
-            "",
-        ]
-    )
     return "\n".join(lines)
 
 
