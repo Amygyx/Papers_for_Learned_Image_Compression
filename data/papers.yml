@@ -132,21 +132,6 @@ papers:
     paradigm: [foundation-model]
     focus: [entropy-model]
     capability: []
-
-  - id: llm-lossless-visual-prompts-2025
-    title: Large Language Model for Lossless Image Compression with Visual Prompts
-    first_author: Junhao Du
-    year: 2025
-    venue: ICLR
-    status: published
-    paper_url: https://openreview.net/forum?id=dcG17rjJF9
-    project_url: null
-    section: lossless-near-lossless
-    objective: lossless
-    paradigm: [foundation-model]
-    focus: [entropy-model]
-    capability: []
-
   - id: fnlic-2025
     title: Fitted Neural Lossless Image Compression
     first_author: Zhe Zhang
