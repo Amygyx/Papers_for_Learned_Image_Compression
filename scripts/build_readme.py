@@ -227,6 +227,21 @@ def _paper_cell(paper: dict) -> str:
     return f"[{_escape(paper['title'])}]({paper['paper_url']})"
 
 
+def _project_cell(project_url: str | None) -> str:
+    if not project_url:
+        return "—"
+
+    parsed = urlparse(project_url)
+    if parsed.netloc.lower() == "github.com":
+        path_parts = [part for part in parsed.path.split("/") if part]
+        if len(path_parts) >= 2:
+            repository = "/".join(path_parts[:2])
+            badge = f"https://img.shields.io/github/stars/{repository}.svg?style=social&label=Star"
+            return f"[![Stars]({badge})]({project_url})"
+
+    return f"[link]({project_url})"
+
+
 def render(data: dict, papers: list[dict]) -> str:
     metadata = data["metadata"]
     counts = {section: 0 for section in SECTION_ORDER}
@@ -292,7 +307,7 @@ def render(data: dict, papers: list[dict]) -> str:
             ]
         )
         for paper in section_papers:
-            project = f"[link]({paper['project_url']})" if paper["project_url"] else "—"
+            project = _project_cell(paper["project_url"])
             venue = _escape(paper["venue"])
             if paper["status"] == "preprint":
                 venue += " (Preprint)"
