@@ -118,6 +118,55 @@ papers:
     focus: []
     capability: []
 
+  # Other tasks — Encryption
+  - id: dynamic-feedback-image-privacy-2024
+    title: Dynamic feedback bit-level image privacy protection based on chaos and information hiding
+    first_author: Jinlong Zhang
+    year: 2024
+    venue: scientific Reports, 2024
+    status: published
+    paper_url: https://www.nature.com/articles/s41598-024-53325-4
+    project_url: null
+    section: other-tasks-encryption
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+    method: Visual Cryptography
+    legacy_order: 1
+
+  - id: multi-level-privacy-traffic-images-2024
+    title: A multi-level privacy-preserving scheme for extracting traffic images
+    first_author: Xiaofei He
+    year: 2024
+    venue: Signal Processing, 2024
+    status: published
+    paper_url: https://www.sciencedirect.com/science/article/pii/S0165168424000641
+    project_url: null
+    section: other-tasks-encryption
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+    method: CS
+    legacy_order: 2
+
+  - id: dna-image-compression-encryption-2023
+    title: A novel image compression and encryption scheme based on conservative chaotic system and DNA method
+    first_author: Xin Wu
+    year: 2023
+    venue: Chaos, Solitons and Fractals, 2023
+    status: published
+    paper_url: https://www.sciencedirect.com/science/article/pii/S0960077923003934?via%3Dihub
+    project_url: null
+    section: other-tasks-encryption
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+    method: DNA
+    legacy_order: 3
+
   # Lossless and near-lossless compression
   - id: llm-lossless-next-pixel-2025
     title: 'Large Language Models for Lossless Image Compression: Next-Pixel Prediction in Language Space is All You Need'
