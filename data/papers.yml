@@ -4,6 +4,105 @@ metadata:
   scope: Curated research on neural still-image compression.
 
 papers:
+  # Recently verified top-conference papers
+  - id: glic-2026
+    title: Adaptive Learned Image Compression with Graph Neural Networks
+    first_author: Yunuo Chen
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Adaptive_Learned_Image_Compression_with_Graph_Neural_Networks_CVPR_2026_paper.html
+    project_url: https://github.com/UnoC-727/GLIC
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, adaptation]
+    capability: [content-adaptive]
+
+  - id: sparse-attention-adaptive-frequency-2026
+    title: Learned Image Compression via Sparse Attention and Adaptive Frequency
+    first_author: Huidong Ma
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Ma_Learned_Image_Compression_via_Sparse_Attention_and_Adaptive_Frequency_CVPR_2026_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, optimization]
+    capability: [content-adaptive, low-complexity]
+
+  - id: cmic-2026
+    title: Content-Aware Mamba for Learned Image Compression
+    first_author: Yunuo Chen
+    year: 2026
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=WwDNiisZQm
+    project_url: https://github.com/UnoC-727/CMIC
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, adaptation]
+    capability: [content-adaptive, low-complexity]
+
+  - id: self-teacher-latent-distillation-2026
+    title: 'When the Teacher Has More Bits: Self-Teacher Latent Distillation for Learned Image Compression'
+    first_author: Abdellah El Mennaoui
+    year: 2026
+    venue: ECCV
+    status: published
+    paper_url: https://www.eurecom.fr/en/publication/8851
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [optimization]
+    capability: []
+
+  - id: nefic-2026
+    title: Next-Frame Decoding for Ultra-Low-Bitrate Image Compression with Video Diffusion Priors
+    first_author: Yunuo Chen
+    year: 2026
+    venue: ECCV
+    status: published
+    paper_url: https://arxiv.org/abs/2603.15129
+    project_url: https://github.com/UnoC-727/NeFIC
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: [low-complexity]
+
+  - id: contextformer-2022
+    title: 'Contextformer: A Transformer with Spatio-Channel Attention for Context Modeling in Learned Image Compression'
+    first_author: Ahmet Burakhan Koyuncu
+    year: 2022
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/6046_ECCV_2022_paper.php
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  - id: content-oriented-lic-2022
+    title: Content-Oriented Learned Image Compression
+    first_author: Meng Li
+    year: 2022
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/7542_ECCV_2022_paper.php
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [adaptation, entropy-model]
+    capability: [content-adaptive]
+
   # Surveys, benchmarks, and standards
   - id: jpeg-ai-overview-2026
     title: An Overview of the JPEG AI Learning-Based Image Coding Standard
@@ -88,7 +187,6 @@ papers:
     paradigm: [transform]
     focus: [benchmark]
     capability: []
-
 
   - id: image-video-compression-review-2019
     title: 'Image and Video Compression With Neural Networks: A Review'
@@ -181,6 +279,7 @@ papers:
     paradigm: [foundation-model]
     focus: [entropy-model]
     capability: []
+
   - id: fnlic-2025
     title: Fitted Neural Lossless Image Compression
     first_author: Zhe Zhang
@@ -841,20 +940,6 @@ papers:
     focus: [optimization]
     capability: [low-complexity, practical, variable-rate]
 
-  - id: diffusion-quality-tradeoffs-2025
-    title: Diffusion-based Compression Quality Tradeoffs without Retraining
-    first_author: Jonas Brenig
-    year: 2025
-    venue: ICCV Workshops
-    status: published
-    paper_url: https://openaccess.thecvf.com/content/ICCV2025W/AIM/html/Brenig_Diffusion-based_Compression_Quality_Tradeoffs_without_Retraining_ICCVW_2025_paper.html
-    project_url: null
-    section: perception-oriented
-    objective: perception
-    paradigm: [diffusion]
-    focus: [adaptation, optimization]
-    capability: [content-adaptive]
-
   - id: region-adaptive-diffusion-2025
     title: 'Decouple Distortion from Perception: Region Adaptive Diffusion for Extreme-low Bitrate Perception Image Compression'
     first_author: Jinchang Xu
@@ -938,4 +1023,3 @@ papers:
     paradigm: [gan]
     focus: [quantization, optimization]
     capability: []
-
