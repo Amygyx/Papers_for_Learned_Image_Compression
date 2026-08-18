@@ -13,13 +13,6 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 - [Lossy — Perception-oriented Coding](#lossy--perception-oriented-coding)
 - [Other tasks](#other-tasks)
 
-## Tag vocabulary
-
-- **Objective:** `lossless`, `near-lossless`, `distortion`, `perception`
-- **Paradigm:** `transform`, `flow`, `vq`, `inr`, `overfitted`, `gan`, `diffusion`, `foundation-model`
-- **Focus:** `transform`, `entropy-model`, `quantization`, `optimization`, `adaptation`
-- **Capability:** `variable-rate`, `progressive`, `scalable`, `content-adaptive`, `low-complexity`, `practical`
-
 ## Surveys, Benchmarks & Standards
 
 Surveys, evaluation resources, and standardization milestones for neural image compression.
@@ -37,7 +30,7 @@ Surveys, evaluation resources, and standardization milestones for neural image c
 
 ## Lossless & Near-lossless Compression
 
-Neural lossless codecs and methods with explicit pointwise reconstruction-error constraints.
+
 
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
@@ -45,7 +38,7 @@ Neural lossless codecs and methods with explicit pointwise reconstruction-error 
 | FNLIC | [Fitted Neural Lossless Image Compression](https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Fitted_Neural_Lossless_Image_Compression_CVPR_2025_paper.html) | Zhe Zhang | CVPR2025 | [![Stars](https://img.shields.io/github/stars/ZZ022/FNLIC.svg?style=social&label=Star)](https://github.com/ZZ022/FNLIC) |
 | LosslessINR | [Towards Lossless Implicit Neural Representation via Bit Plane Decomposition](https://openaccess.thecvf.com/content/CVPR2025/html/Han_Towards_Lossless_Implicit_Neural_Representation_via_Bit_Plane_Decomposition_CVPR_2025_paper.html) | Woo Kyoung Han | CVPR2025 | [![Stars](https://img.shields.io/github/stars/WooKyoungHan/LosslessINR.svg?style=social&label=Star)](https://github.com/WooKyoungHan/LosslessINR) |
 | -- | [Learned Lossless Image Compression based on Bit Plane Slicing](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Learned_Lossless_Image_Compression_based_on_Bit_Plane_Slicing_CVPR_2024_paper.html) | Zhe Zhang | CVPR2024 | — |
-| DLPR | [Deep Lossy Plus Residual Coding for Lossless and Near-lossless Image Compression](https://ieeexplore.ieee.org/document/10378746) | Yuanchao Bai | TPAMI2024 | [![Stars](https://img.shields.io/github/stars/BYchao100/Deep-Lossy-Plus-Residual-Coding.svg?style=social&label=Star)](https://github.com/BYchao100/Deep-Lossy-Plus-Residual-Coding) |
+| DLPR | [Deep Lossy Plus Residual Coding for Lossless and Near-lossless Image Compression](https://doi.org/10.1109/TPAMI.2023.3348486) | Yuanchao Bai | TPAMI2024 | [![Stars](https://img.shields.io/github/stars/BYchao100/Deep-Lossy-Plus-Residual-Coding.svg?style=social&label=Star)](https://github.com/BYchao100/Deep-Lossy-Plus-Residual-Coding) |
 | LC-FDNet | [Learned Lossless Image Compression With Frequency Decomposition Network](https://openaccess.thecvf.com/content/CVPR2022/html/Rhee_LC-FDNet_Learned_Lossless_Image_Compression_With_Frequency_Decomposition_Network_CVPR_2022_paper.html) | Hochang Rhee | CVPR2022 | [![Stars](https://img.shields.io/github/stars/myideaisgood/LC-FDNet.svg?style=social&label=Star)](https://github.com/myideaisgood/LC-FDNet) |
 | PILC | [Practical Image Lossless Compression With an End-to-End GPU Oriented Neural Framework](https://openaccess.thecvf.com/content/CVPR2022/html/Kang_PILC_Practical_Image_Lossless_Compression_With_an_End-to-End_GPU_Oriented_CVPR_2022_paper.html) | Ning Kang | CVPR2022 | — |
 | iFlow | [iFlow: Numerically Invertible Flows for Efficient Lossless Compression via a Uniform Coder](https://arxiv.org/abs/2111.00965) | Shifeng Zhang | NeurIPS2021 | — |
@@ -55,7 +48,10 @@ Neural lossless codecs and methods with explicit pointwise reconstruction-error 
 | -- | [Learning Scalable l-infinity-constrained Near-lossless Image Compression via Joint Lossy Image and Residual Compression](https://openaccess.thecvf.com/content/CVPR2021/papers/Bai_Learning_Scalable_lY-Constrained_Near-Lossless_Image_Compression_via_Joint_Lossy_Image_CVPR_2021_paper.pdf) | Yuanchao Bai | CVPR2021 | [![Stars](https://img.shields.io/github/stars/BYchao100/Scalable-Near-lossless-Image-Compression.svg?style=social&label=Star)](https://github.com/BYchao100/Scalable-Near-lossless-Image-Compression) |
 | IDF++ | [IDF++: Analyzing and Improving Integer Discrete Flows for Lossless Compression](https://openreview.net/forum?id=MBOyiNnYthd) | Rianne van den Berg | ICLR2021 | — |
 | -- | [Ultra High Fidelity Deep Image Decompression With l-infinity-Constrained Compression](https://ieeexplore.ieee.org/document/9277919) | Xi Zhang | TIP2021 | — |
+| LBB | [Compression with Flows via Local Bits-Back Coding](https://proceedings.neurips.cc/paper_files/paper/2019/hash/f6e794a75c5d51de081dbefa224304f9-Abstract.html) | Jonathan Ho | NeurIPS2019 | — |
+| Bit-Swap | [Bit-Swap: Recursive Bits-Back Coding for Lossless Compression with Hierarchical Latent Variables](https://proceedings.mlr.press/v97/kingma19a.html) | Friso Kingma | ICML2019 | [![Stars](https://img.shields.io/github/stars/fhkingma/bitswap.svg?style=social&label=Star)](https://github.com/fhkingma/bitswap) |
 | L3C | [Practical Full Resolution Learned Lossless Image Compression](https://openaccess.thecvf.com/content_CVPR_2019/html/Mentzer_Practical_Full_Resolution_Learned_Lossless_Image_Compression_CVPR_2019_paper.html) | Fabian Mentzer | CVPR2019 | [![Stars](https://img.shields.io/github/stars/fab-jul/L3C-PyTorch.svg?style=social&label=Star)](https://github.com/fab-jul/L3C-PyTorch) |
+| BB-ANS | [Practical Lossless Compression with Latent Variables using Bits Back Coding](https://openreview.net/forum?id=ryE98iR5tm) | James Townsend | ICLR2019 | [![Stars](https://img.shields.io/github/stars/bits-back/bits-back.svg?style=social&label=Star)](https://github.com/bits-back/bits-back) |
 
 ## Lossy — Distortion-oriented Coding
 
@@ -97,7 +93,7 @@ Methods primarily optimized for rate-distortion performance using pixel-domain f
 | -- | [Soft Then Hard: Rethinking the Quantization in Neural Image Compression](https://proceedings.mlr.press/v139/guo21c.html) | Zongyu Guo | ICML2021 | — |
 | -- | [Checkerboard Context Model for Efficient Learned Image Compression](https://openaccess.thecvf.com/content/CVPR2021/html/He_Checkerboard_Context_Model_for_Efficient_Learned_Image_Compression_CVPR_2021_paper.html) | Dailan He | CVPR2021 | — |
 | -- | [Learned Image Compression with Discretized Gaussian Mixture Likelihoods and Attention Modules](https://openaccess.thecvf.com/content_CVPR_2020/html/Cheng_Learned_Image_Compression_With_Discretized_Gaussian_Mixture_Likelihoods_and_Attention_CVPR_2020_paper.html) | Zhengxue Cheng | CVPR2020 | — |
-| -- | [Coarse-to-Fine Hyper-Prior Modeling for Learned Image Compression](https://doi.org/10.1609/aaai.v34i07.6696) | Yueyu Hu | AAAI2020 | — |
+| -- | [Coarse-to-Fine Hyper-Prior Modeling for Learned Image Compression](https://doi.org/10.1609/aaai.v34i07.6736) | Yueyu Hu | AAAI2020 | — |
 | -- | [Joint Autoregressive and Hierarchical Priors for Learned Image Compression](https://proceedings.neurips.cc/paper/2018/hash/53edebc543333dfbf7c5933af792c9c4-Abstract.html) | David Minnen | NeurIPS2018 | [![Stars](https://img.shields.io/github/stars/tensorflow/compression.svg?style=social&label=Star)](https://github.com/tensorflow/compression) |
 | -- | [Variational Image Compression with a Scale Hyperprior](https://openreview.net/forum?id=rkcQFMZRb) | Johannes Balle | ICLR2018 | [![Stars](https://img.shields.io/github/stars/tensorflow/compression.svg?style=social&label=Star)](https://github.com/tensorflow/compression) |
 | -- | [Soft-to-Hard Vector Quantization for End-to-End Learning Compressible Representations](https://proceedings.neurips.cc/paper/2017/hash/86b122d4358357d834a87ce618a55de0-Abstract.html) | Eirikur Agustsson | NeurIPS2017 | — |
@@ -116,14 +112,23 @@ Methods primarily optimized for perceptual quality or the rate-distortion-percep
 | DiT-IC | [DiT-IC: Aligned Diffusion Transformer for Efficient Image Compression](https://openaccess.thecvf.com/content/CVPR2026/html/Shi_DiT-IC_Aligned_Diffusion_Transformer_for_Efficient_Image_Compression_CVPR_2026_paper.html) | Junqi Shi | CVPR2026 | — |
 | -- | [Ultra-Low Bitrate Perceptual Image Compression with Shallow Encoder](https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Ultra-Low_Bitrate_Perceptual_Image_Compression_with_Shallow_Encoder_CVPR_2026_paper.html) | Tianyu Zhang | CVPR2026 | — |
 | -- | [What Matters in Practical Learned Image Compression](https://openaccess.thecvf.com/content/CVPR2026/html/Tatwawadi_What_Matters_in_Practical_Learned_Image_Compression_CVPR_2026_paper.html) | Kedar Tatwawadi | CVPR2026 | — |
+| Turbo-DDCM | [Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression](https://openreview.net/forum?id=eIF1QvC94Z) | Amit Vaisman | ICLR2026 | — |
+| OneDC | [One-Step Diffusion-Based Image Compression with Semantic Distillation](https://proceedings.neurips.cc/paper_files/paper/2025/hash/352a67c085e607acdcfc0076899750f4-Abstract-Conference.html) | Naifu Xue | NeurIPS2025 | [link](https://onedc-codec.github.io/) |
+| OSCAR | [OSCAR: One-Step Diffusion Codec Across Multiple Bit-rates](https://openreview.net/forum?id=uodE9CAXaF) | Jinpei Guo | NeurIPS2025 | [![Stars](https://img.shields.io/github/stars/jp-guo/OSCAR.svg?style=social&label=Star)](https://github.com/jp-guo/OSCAR) |
+| StableCodec | [StableCodec: Taming One-Step Diffusion for Extreme Image Compression](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_StableCodec_Taming_One-Step_Diffusion_for_Extreme_Image_Compression_ICCV_2025_paper.pdf) | Tianyu Zhang | ICCV2025 | [![Stars](https://img.shields.io/github/stars/LuizScarlet/StableCodec.svg?style=social&label=Star)](https://github.com/LuizScarlet/StableCodec) |
+| DDCM | [Compressed Image Generation with Denoising Diffusion Codebook Models](https://icml.cc/virtual/2025/poster/44687) | Guy Ohayon | ICML2025 | [![Stars](https://img.shields.io/github/stars/DDCM-2025/ddcm-compressed-image-generation.svg?style=social&label=Star)](https://github.com/DDCM-2025/ddcm-compressed-image-generation) |
+| -- | [Bridging the Gap between Gaussian Diffusion Models and Universal Quantization for Image Compression](https://openaccess.thecvf.com/content/CVPR2025/papers/Relic_Bridging_the_Gap_between_Gaussian_Diffusion_Models_and_Universal_Quantization_CVPR_2025_paper.pdf) | Lucas Relic | CVPR2025 | — |
 | -- | [Decouple Distortion from Perception: Region Adaptive Diffusion for Extreme-low Bitrate Perception Image Compression](https://openaccess.thecvf.com/content/CVPR2025/html/Xu_Decouple_Distortion_from_Perception_Region_Adaptive_Diffusion_for_Extreme-low_Bitrate_CVPR_2025_paper.html) | Jinchang Xu | CVPR2025 | — |
 | -- | [Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein Distortion](https://openaccess.thecvf.com/content/CVPR2025/html/Balle_Good_Cheap_and_Fast_Overfitted_Image_Compression_with_Wasserstein_Distortion_CVPR_2025_paper.html) | Jona Balle | CVPR2025 | — |
+| DiffC | [Lossy Compression with Pretrained Diffusion Models](https://openreview.net/forum?id=raUnLe0Z04) | Jeremy Vonderfecht | ICLR2025 | [![Stars](https://img.shields.io/github/stars/JeremyIV/diffc.svg?style=social&label=Star)](https://github.com/JeremyIV/diffc) |
 | DiffEIC | [Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior](https://doi.org/10.1109/TCSVT.2024.3455576) | Zhiyuan Li | TCSVT2025 | [![Stars](https://img.shields.io/github/stars/huai-chang/DiffEIC.svg?style=social&label=Star)](https://github.com/huai-chang/DiffEIC) |
 | -- | [Lossy Image Compression with Foundation Diffusion Models](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7844_ECCV_2024_paper.php) | Lucas Relic | ECCV2024 | — |
+| TACO | [Neural Image Compression with Text-guided Encoding for both Pixel-level and Perceptual Fidelity](https://taco-nic.github.io/) | Hagyeong Lee | ICML2024 | [link](https://taco-nic.github.io/) |
 | GLC | [Generative Latent Coding for Ultra-Low Bitrate Image Compression](https://openaccess.thecvf.com/content/CVPR2024/html/Jia_Generative_Latent_Coding_for_Ultra-Low_Bitrate_Image_Compression_CVPR_2024_paper.html) | Zhaoyang Jia | CVPR2024 | [![Stars](https://img.shields.io/github/stars/jzyustc/GLC.svg?style=social&label=Star)](https://github.com/jzyustc/GLC) |
 | -- | [Idempotence and Perceptual Image Compression](https://openreview.net/forum?id=Cy5v64DqEF) | Tongda Xu | ICLR2024 | [![Stars](https://img.shields.io/github/stars/tongdaxu/Idempotence-and-Perceptual-Image-Compression.svg?style=social&label=Star)](https://github.com/tongdaxu/Idempotence-and-Perceptual-Image-Compression) |
 | PerCo | [Towards Image Compression with Perfect Realism at Ultra-Low Bitrates](https://openreview.net/forum?id=ktdETU9JBg) | Marlene Careil | ICLR2024 | — |
 | CDC | [Lossy Image Compression with Conditional Diffusion Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/ccf6d8b4a1fe9d9c8192f00c713872ea-Abstract-Conference.html) | Ruihan Yang | NeurIPS2023 | [![Stars](https://img.shields.io/github/stars/buggyyang/CDC_compression.svg?style=social&label=Star)](https://github.com/buggyyang/CDC_compression) |
+| MS-ILLM | [Improving Statistical Fidelity for Neural Image Compression with Implicit Local Likelihood Models](https://icml.cc/virtual/2023/poster/24565) | Matthew Muckley | ICML2023 | [![Stars](https://img.shields.io/github/stars/facebookresearch/NeuralCompression.svg?style=social&label=Star)](https://github.com/facebookresearch/NeuralCompression) |
 | HiFiC | [High-Fidelity Generative Image Compression](https://proceedings.neurips.cc/paper/2020/hash/8a50bae297807da9e97722a0b3fd8f27-Abstract.html) | Fabian Mentzer | NeurIPS2020 | [![Stars](https://img.shields.io/github/stars/tensorflow/compression.svg?style=social&label=Star)](https://github.com/tensorflow/compression/tree/master/models/hific) |
 | -- | [Generative Adversarial Networks for Extreme Learned Image Compression](https://openaccess.thecvf.com/content_ICCV_2019/html/Agustsson_Generative_Adversarial_Networks_for_Extreme_Learned_Image_Compression_ICCV_2019_paper.html) | Eirikur Agustsson | ICCV2019 | — |
 | -- | [Rethinking Lossy Compression: The Rate-Distortion-Perception Tradeoff](https://proceedings.mlr.press/v97/blau19a.html) | Yochai Blau | ICML2019 | — |
