@@ -7,7 +7,7 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 
 <!-- Paper tables below are generated from data/papers.yml. -->
 **Last curated:** 2026-08-18  
-**Coverage:** 63 selected publications and preprints.
+**Coverage:** 66 selected publications and preprints.
 
 This first curation pass focuses on surveys and standards, lossless/near-lossless coding, distortion-oriented lossy coding, and perception-oriented lossy coding. Semantic or human-machine coding, special image domains, and broader visual compression are currently [deferred](DEFERRED.md).
 
@@ -17,6 +17,7 @@ This first curation pass focuses on surveys and standards, lossless/near-lossles
 - [Lossless & Near-lossless Compression](#lossless-near-lossless-compression)
 - [Lossy — Distortion-oriented Coding](#lossy-distortion-oriented-coding)
 - [Lossy — Perception-oriented Coding](#lossy-perception-oriented-coding)
+- [Other tasks](#other-tasks)
 
 ## Tag vocabulary
 
@@ -115,3 +116,13 @@ Methods primarily optimized for perceptual quality or the rate-distortion-percep
 | 2020 | [High-Fidelity Generative Image Compression](https://proceedings.neurips.cc/paper/2020/hash/8a50bae297807da9e97722a0b3fd8f27-Abstract.html) | Fabian Mentzer | NeurIPS | `perception` · `gan` · `optimization` | [![Stars](https://img.shields.io/github/stars/tensorflow/compression.svg?style=social&label=Star)](https://github.com/tensorflow/compression/tree/master/models/hific) |
 | 2019 | [Generative Adversarial Networks for Extreme Learned Image Compression](https://openaccess.thecvf.com/content_ICCV_2019/html/Agustsson_Generative_Adversarial_Networks_for_Extreme_Learned_Image_Compression_ICCV_2019_paper.html) | Eirikur Agustsson | ICCV | `perception` · `gan` · `quantization` · `optimization` | — |
 | 2019 | [Rethinking Lossy Compression: The Rate-Distortion-Perception Tradeoff](https://proceedings.mlr.press/v97/blau19a.html) | Yochai Blau | ICML | `perception` · `gan` · `optimization` | — |
+
+## Other tasks
+
+### Encryption
+
+| Methods | Paper | First Author | Venue |
+| :--: | :---: | :--: | :--: |
+| Visual Cryptography | [Dynamic feedback bit-level image privacy protection based on chaos and information hiding](https://www.nature.com/articles/s41598-024-53325-4) | Jinlong Zhang | scientific Reports, 2024 |
+| CS | [A multi-level privacy-preserving scheme for extracting traffic images](https://www.sciencedirect.com/science/article/pii/S0165168424000641) | Xiaofei He | Signal Processing, 2024 |
+| DNA | [A novel image compression and encryption scheme based on conservative chaotic system and DNA method](https://www.sciencedirect.com/science/article/pii/S0960077923003934?via%3Dihub) | Xin Wu | Chaos, Solitons and Fractals, 2023 |
