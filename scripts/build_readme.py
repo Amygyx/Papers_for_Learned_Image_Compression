@@ -31,7 +31,7 @@ SECTIONS = {
     ),
     "lossless-near-lossless": (
         "Lossless & Near-lossless Compression",
-        "Neural lossless codecs and methods with explicit pointwise reconstruction-error constraints.",
+        "",
     ),
     "distortion-oriented": (
         "Lossy — Distortion-oriented Coding",
@@ -150,6 +150,18 @@ SHORT_NAMES = {
     "dit-ic-2026": "DiT-IC",
     "cdc-2023": "CDC",
     "hific-2020": "HiFiC",
+    "bit-swap-2019": "Bit-Swap",
+    "bb-ans-2019": "BB-ANS",
+    "local-bits-back-2019": "LBB",
+    "diffc-2025": "DiffC",
+    "ddcm-2025": "DDCM",
+    "turbo-ddcm-2026": "Turbo-DDCM",
+    "ms-illm-2023": "MS-ILLM",
+    "taco-2024": "TACO",
+    "oscar-2025": "OSCAR",
+    "onedc-2025": "OneDC",
+    "stablecodec-2025": "StableCodec",
+    "relic-uq-2025": "--",
 }
 
 
@@ -337,16 +349,9 @@ def render(data: dict, papers: list[dict]) -> str:
         anchor = re.sub(r"[^a-z0-9 -]", "", title.lower()).replace(" ", "-")
         lines.append(f"- [{title}](#{anchor})")
 
-    lines.extend(["", "## Tag vocabulary", ""])
-    lines.extend(
-        [
-            "- **Objective:** `lossless`, `near-lossless`, `distortion`, `perception`",
-            "- **Paradigm:** `transform`, `flow`, `vq`, `inr`, `overfitted`, `gan`, `diffusion`, `foundation-model`",
-            "- **Focus:** `transform`, `entropy-model`, `quantization`, `optimization`, `adaptation`",
-            "- **Capability:** `variable-rate`, `progressive`, `scalable`, `content-adaptive`, `low-complexity`, `practical`",
-            "",
-        ]
-    )
+    # Tag vocabulary remains validated in the data schema, but is intentionally
+    # hidden from the README while the tables do not display per-paper tags.
+    lines.append("")
 
     for section in SECTION_ORDER:
         title, description = SECTIONS[section]
