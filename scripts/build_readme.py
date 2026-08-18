@@ -155,6 +155,7 @@ SHORT_NAMES = {
     "local-bits-back-2019": "LBB",
     "diffc-2025": "DiffC",
     "ddcm-2025": "DDCM",
+    "cod-lite-2026": "CoD-Lite",
     "turbo-ddcm-2026": "Turbo-DDCM",
     "ms-illm-2023": "MS-ILLM",
     "taco-2024": "TACO",
