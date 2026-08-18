@@ -484,7 +484,7 @@ papers:
     year: 2024
     venue: IEEE TPAMI
     status: published
-    paper_url: https://ieeexplore.ieee.org/document/10378746
+    paper_url: https://doi.org/10.1109/TPAMI.2023.3348486
     project_url: https://github.com/BYchao100/Deep-Lossy-Plus-Residual-Coding
     section: lossless-near-lossless
     objective: near-lossless
@@ -947,7 +947,7 @@ papers:
     year: 2020
     venue: AAAI
     status: published
-    paper_url: https://doi.org/10.1609/aaai.v34i07.6696
+    paper_url: https://doi.org/10.1609/aaai.v34i07.6736
     project_url: null
     section: distortion-oriented
     objective: distortion
