@@ -21,7 +21,6 @@ SECTION_ORDER = [
     "lossless-near-lossless",
     "distortion-oriented",
     "perception-oriented",
-    "emerging",
 ]
 
 SECTIONS = {
@@ -40,10 +39,6 @@ SECTIONS = {
     "perception-oriented": (
         "Lossy — Perception-oriented Coding",
         "Methods primarily optimized for perceptual quality or the rate-distortion-perception trade-off.",
-    ),
-    "emerging": (
-        "Emerging Works",
-        "Selective preprints with public code and a clearly differentiated compression contribution.",
     ),
 }
 
@@ -177,13 +172,6 @@ def validate(data: dict) -> list[dict]:
             raise ValidationError(f"{paper_id}: distortion section requires objective: distortion")
         if paper["section"] == "perception-oriented" and objective != "perception":
             raise ValidationError(f"{paper_id}: perception section requires objective: perception")
-        if paper["section"] == "emerging" and paper["status"] != "preprint":
-            raise ValidationError(f"{paper_id}: emerging works must be preprints")
-        if paper["section"] != "emerging" and paper["status"] == "preprint":
-            raise ValidationError(f"{paper_id}: preprints must be placed in Emerging Works")
-        if paper["status"] == "preprint":
-            if paper["venue"] != "arXiv" or not paper["project_url"]:
-                raise ValidationError(f"{paper_id}: preprints require venue arXiv and public code")
 
         _validate_list(paper, "paradigm", ALLOWED_PARADIGMS)
         _validate_list(paper, "focus", ALLOWED_FOCUS)
@@ -280,15 +268,6 @@ def render(data: dict, papers: list[dict]) -> str:
         lines.append(f"- [{title}](#{anchor})")
 
     lines.extend(["", "## Tag vocabulary", ""])
-    lines.extend(
-        [
-            "- **Objective:** `lossless`, `near-lossless`, `distortion`, `perception`",
-            "- **Paradigm:** `transform`, `flow`, `vq`, `inr`, `overfitted`, `gan`, `diffusion`, `foundation-model`",
-            "- **Focus:** `transform`, `entropy-model`, `quantization`, `optimization`, `adaptation`",
-            "- **Capability:** `variable-rate`, `progressive`, `scalable`, `content-adaptive`, `low-complexity`, `practical`",
-            "",
-        ]
-    )
 
     for section in SECTION_ORDER:
         title, description = SECTIONS[section]
