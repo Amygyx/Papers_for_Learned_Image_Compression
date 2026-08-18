@@ -5,7 +5,6 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 
 **📌 About new works.** If you want to incorporate your studies (e.g., the link of paper or project) on neural image compression in this repository. Welcome to raise an issue or email us. We will incorporate it into this repository and our survey report as soon as possible.
 
-
 <!-- Paper tables below are generated from data/papers.yml. -->
 **Last curated:** 2026-08-18  
 **Coverage:** 64 selected publications and preprints.
