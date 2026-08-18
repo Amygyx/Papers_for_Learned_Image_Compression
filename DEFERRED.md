@@ -23,15 +23,6 @@ This file preserves entries that were present before the 2026-08 curation pass b
 - 3DGS.zip: A Survey on 3D Gaussian Splatting Compression Methods — arXiv 2024
 - Image and Video Compression With Neural Networks: A Review — IEEE TCSVT
 
-## Removed as Out of Scope
-
-The previous encryption section was removed because encryption is not neural image compression:
-
-- A comprehensive survey on image encryption: Taxonomy, challenges, and future directions
-- Dynamic feedback bit-level image privacy protection based on chaos and information hiding
-- A multi-level privacy-preserving scheme for extracting traffic images
-- A novel image compression and encryption scheme based on conservative chaotic system and DNA method
-
 ## Legacy Entries Not Carried Forward
 
 These preprints are retained outside the main index until they have a verified publication status:
