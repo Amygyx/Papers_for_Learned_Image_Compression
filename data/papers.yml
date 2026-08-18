@@ -1083,6 +1083,21 @@ papers:
     capability: []
 
   # Additional perception-oriented coding
+  - id: diffc-gaussian-2022
+    title: Lossy Compression with Gaussian Diffusion
+    first_author: Lucas Theis
+    year: 2022
+    venue: arXiv
+    status: preprint
+    include_preprint: true
+    paper_url: https://arxiv.org/abs/2206.08889
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [optimization]
+    capability: [variable-rate, progressive]
+
   - id: cod-lite-2026
     title: 'CoD-Lite: Real-Time Diffusion-Based Generative Image Compression'
     first_author: Zhaoyang Jia
