@@ -21,6 +21,7 @@ SECTION_ORDER = [
     "lossless-near-lossless",
     "distortion-oriented",
     "perception-oriented",
+    "other-tasks-encryption",
 ]
 
 SECTIONS = {
@@ -39,6 +40,10 @@ SECTIONS = {
     "perception-oriented": (
         "Lossy — Perception-oriented Coding",
         "Methods primarily optimized for perceptual quality or the rate-distortion-perception trade-off.",
+    ),
+    "other-tasks-encryption": (
+        "Other tasks",
+        None,
     ),
 }
 
@@ -172,6 +177,13 @@ def validate(data: dict) -> list[dict]:
             raise ValidationError(f"{paper_id}: distortion section requires objective: distortion")
         if paper["section"] == "perception-oriented" and objective != "perception":
             raise ValidationError(f"{paper_id}: perception section requires objective: perception")
+        if paper["section"] == "other-tasks-encryption":
+            if objective is not None:
+                raise ValidationError(f"{paper_id}: encryption records must use objective: null")
+            if not isinstance(paper.get("method"), str) or not paper["method"].strip():
+                raise ValidationError(f"{paper_id}: encryption records require a method")
+            if not isinstance(paper.get("legacy_order"), int):
+                raise ValidationError(f"{paper_id}: encryption records require legacy_order")
         if paper["status"] == "preprint":
             raise ValidationError(f"{paper_id}: preprints are retained in DEFERRED.md, not the main index")
 
@@ -281,21 +293,43 @@ def render(data: dict, papers: list[dict]) -> str:
 
     for section in SECTION_ORDER:
         title, description = SECTIONS[section]
-        section_papers = sorted(
-            (paper for paper in papers if paper["section"] == section),
-            key=lambda paper: (-paper["year"], paper["title"].casefold()),
-        )
-        lines.extend(
-            [
-                f"## {title}",
-                "",
-                description,
-                "",
-                "| Year | Paper | First author | Venue | Tags | Code / project |",
-                "| :--: | --- | --- | --- | --- | :--: |",
-            ]
-        )
+        section_papers = (paper for paper in papers if paper["section"] == section)
+        if section == "other-tasks-encryption":
+            section_papers = sorted(section_papers, key=lambda paper: paper["legacy_order"])
+        else:
+            section_papers = sorted(
+                section_papers,
+                key=lambda paper: (-paper["year"], paper["title"].casefold()),
+            )
+        if section == "other-tasks-encryption":
+            lines.extend(
+                [
+                    f"## {title}",
+                    "",
+                    "### Encryption",
+                    "",
+                    "| Methods | Paper | First Author | Venue |",
+                    "| :--: | :---: | :--: | :--: |",
+                ]
+            )
+        else:
+            lines.extend(
+                [
+                    f"## {title}",
+                    "",
+                    description,
+                    "",
+                    "| Year | Paper | First author | Venue | Tags | Code / project |",
+                    "| :--: | --- | --- | --- | --- | :--: |",
+                ]
+            )
         for paper in section_papers:
+            if section == "other-tasks-encryption":
+                lines.append(
+                    f"| {_escape(paper['method'])} | {_paper_cell(paper)} | "
+                    f"{_escape(paper['first_author'])} | {_escape(paper['venue'])} |"
+                )
+                continue
             project = _project_cell(paper["project_url"])
             venue = _escape(paper["venue"])
             if paper["status"] == "preprint":
