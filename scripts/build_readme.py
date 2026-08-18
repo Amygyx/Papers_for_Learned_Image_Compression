@@ -172,6 +172,8 @@ def validate(data: dict) -> list[dict]:
             raise ValidationError(f"{paper_id}: distortion section requires objective: distortion")
         if paper["section"] == "perception-oriented" and objective != "perception":
             raise ValidationError(f"{paper_id}: perception section requires objective: perception")
+        if paper["status"] == "preprint":
+            raise ValidationError(f"{paper_id}: preprints are retained in DEFERRED.md, not the main index")
 
         _validate_list(paper, "paradigm", ALLOWED_PARADIGMS)
         _validate_list(paper, "focus", ALLOWED_FOCUS)
@@ -192,7 +194,6 @@ def validate(data: dict) -> list[dict]:
             if arxiv_id in arxiv_ids:
                 raise ValidationError(f"Duplicate arXiv id: {arxiv_id}")
             arxiv_ids.add(arxiv_id)
-
 
     return papers
 
@@ -268,6 +269,15 @@ def render(data: dict, papers: list[dict]) -> str:
         lines.append(f"- [{title}](#{anchor})")
 
     lines.extend(["", "## Tag vocabulary", ""])
+    lines.extend(
+        [
+            "- **Objective:** `lossless`, `near-lossless`, `distortion`, `perception`",
+            "- **Paradigm:** `transform`, `flow`, `vq`, `inr`, `overfitted`, `gan`, `diffusion`, `foundation-model`",
+            "- **Focus:** `transform`, `entropy-model`, `quantization`, `optimization`, `adaptation`",
+            "- **Capability:** `variable-rate`, `progressive`, `scalable`, `content-adaptive`, `low-complexity`, `practical`",
+            "",
+        ]
+    )
 
     for section in SECTION_ORDER:
         title, description = SECTIONS[section]
