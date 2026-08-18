@@ -92,6 +92,39 @@ REQUIRED_FIELDS = {
     "capability",
 }
 
+SHORT_NAMES = {
+    "fnlic-2025": "FNLIC",
+    "lossless-inr-2025": "LosslessINR",
+    "bit-plane-lossless-2024": "--",
+    "dlpr-2024": "DLPR",
+    "lc-fdnet-2022": "LC-FDNet",
+    "pilc-2022": "PILC",
+    "idf-plus-plus-2021": "IDF++",
+    "iflow-2021": "iFlow",
+    "osoa-2021": "OSOA",
+    "ivpf-2021": "iVPF",
+    "l3c-2019": "L3C",
+    "deephq-2026": "DeepHQ",
+    "kdic-2025": "KDiC",
+    "hpcm-2025": "HPCM",
+    "cassic-2025": "Cassic",
+    "dcae-2025": "DCAE",
+    "lalic-2025": "LALIC",
+    "adaptive-lvq-2025": "ALVQ",
+    "cca-2024": "CCA",
+    "weconvene-2024": "WeConvene",
+    "basic-2024": "BaSIC",
+    "wclic-2024": "WCLIC",
+    "tcm-2023": "TCM",
+    "nvtc-2023": "NVTC",
+    "elic-2022": "ELIC",
+    "cod-2026": "CoD",
+    "cadc-2026": "CADC",
+    "dit-ic-2026": "DiT-IC",
+    "cdc-2023": "CDC",
+    "hific-2020": "HiFiC",
+}
+
 
 class ValidationError(ValueError):
     pass
@@ -228,6 +261,15 @@ def _paper_cell(paper: dict) -> str:
     return f"[{_escape(paper['title'])}]({paper['paper_url']})"
 
 
+def _model_cell(paper: dict) -> str:
+    return SHORT_NAMES.get(paper["id"], "--")
+
+
+def _venue_cell(paper: dict) -> str:
+    venue = _escape(paper["venue"]).removeprefix("IEEE ")
+    return f"{venue}{paper['year']}"
+
+
 def _project_cell(project_url: str | None) -> str:
     if not project_url:
         return "—"
@@ -319,8 +361,8 @@ def render(data: dict, papers: list[dict]) -> str:
                     "",
                     description,
                     "",
-                    "| Year | Paper | First author | Venue | Tags | Code / project |",
-                    "| :--: | --- | --- | --- | --- | :--: |",
+                    "| Models | Paper | First Author | Venue | Project |",
+                    "| :--: | :---: | :--: | :--: | :--: |",
                 ]
             )
         for paper in section_papers:
@@ -331,12 +373,9 @@ def render(data: dict, papers: list[dict]) -> str:
                 )
                 continue
             project = _project_cell(paper["project_url"])
-            venue = _escape(paper["venue"])
-            if paper["status"] == "preprint":
-                venue += " (Preprint)"
             lines.append(
-                f"| {paper['year']} | {_paper_cell(paper)} | {_escape(paper['first_author'])} | "
-                f"{venue} | {_tag_list(paper)} | {project} |"
+                f"| {_model_cell(paper)} | {_paper_cell(paper)} | {_escape(paper['first_author'])} | "
+                f"{_venue_cell(paper)} | {project} |"
             )
         lines.append("")
 
