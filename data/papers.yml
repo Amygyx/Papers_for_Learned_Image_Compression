@@ -4,6 +4,133 @@ metadata:
   scope: Curated research on neural still-image compression.
 
 papers:
+  # Additional formally published top-conference papers from the recent backlog
+  - id: glc-2024
+    title: Generative Latent Coding for Ultra-Low Bitrate Image Compression
+    first_author: Zhaoyang Jia
+    year: 2024
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2024/html/Jia_Generative_Latent_Coding_for_Ultra-Low_Bitrate_Image_Compression_CVPR_2024_paper.html
+    project_url: https://github.com/jzyustc/GLC
+    section: perception-oriented
+    objective: perception
+    paradigm: [vq]
+    focus: [transform, quantization]
+    capability: []
+
+  - id: backward-compatible-continual-lic-2024
+    title: Towards Backward-Compatible Continual Learning of Image Compression
+    first_author: Zhihao Duan
+    year: 2024
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2024/html/Duan_Towards_Backward-Compatible_Continual_Learning_of_Image_Compression_CVPR_2024_paper.html
+    project_url: https://gitlab.com/viper-purdue/continual-compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [adaptation]
+    capability: [variable-rate, content-adaptive]
+
+  - id: foundation-diffusion-lic-2024
+    title: Lossy Image Compression with Foundation Diffusion Models
+    first_author: Lucas Relic
+    year: 2024
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7844_ECCV_2024_paper.php
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [transform, optimization]
+    capability: [low-complexity]
+
+  - id: segpic-2024
+    title: Region-Adaptive Transform with Segmentation Prior for Image Compression
+    first_author: Yuxi Liu
+    year: 2024
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/6270_ECCV_2024_paper.php
+    project_url: https://github.com/GityuxiLiu/SegPIC-for-Image-Compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, adaptation]
+    capability: [content-adaptive]
+
+  - id: perco-2024
+    title: Towards Image Compression with Perfect Realism at Ultra-Low Bitrates
+    first_author: Marlene Careil
+    year: 2024
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=ktdETU9JBg
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [vq, diffusion]
+    focus: [transform, quantization]
+    capability: []
+
+  - id: idempotence-perceptual-lic-2024
+    title: Idempotence and Perceptual Image Compression
+    first_author: Tongda Xu
+    year: 2024
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=Cy5v64DqEF
+    project_url: https://github.com/tongdaxu/Idempotence-and-Perceptual-Image-Compression
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [optimization]
+    capability: []
+
+  - id: sga-plus-2024
+    title: Robustly Overfitting Latents for Flexible Neural Image Compression
+    first_author: Yura Perugachi-Diaz
+    year: 2024
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/c1233cb30ef11a3fe6ab10aa96beabaf-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [overfitted]
+    focus: [optimization]
+    capability: [content-adaptive]
+
+  - id: olvq-2024
+    title: Learning Optimal Lattice Vector Quantizers for End-to-End Neural Image Compression
+    first_author: Xi Zhang
+    year: 2024
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/c09916f6f0c428a97a09a53648e5002e-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [vq]
+    focus: [quantization]
+    capability: [low-complexity]
+
+  - id: efficient-no-ar-2023
+    title: Towards Efficient Image Compression Without Autoregressive Models
+    first_author: Muhammad Salman Ali
+    year: 2023
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2023/hash/170dc3e41f2d03e327e04dbab0fccbfb-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
   # Recently verified top-conference papers
   - id: glic-2026
     title: Adaptive Learned Image Compression with Graph Neural Networks
