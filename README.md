@@ -63,11 +63,11 @@ Methods primarily optimized for rate-distortion performance using pixel-domain f
 
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
+| -- | [When the Teacher Has More Bits: Self-Teacher Latent Distillation for Learned Image Compression](https://www.eurecom.fr/en/publication/8851) | Abdellah El Mennaoui | ECCV2026 | — |
 | GLIC | [Adaptive Learned Image Compression with Graph Neural Networks](https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Adaptive_Learned_Image_Compression_with_Graph_Neural_Networks_CVPR_2026_paper.html) | Yunuo Chen | CVPR2026 | [![Stars](https://img.shields.io/github/stars/UnoC-727/GLIC.svg?style=social&label=Star)](https://github.com/UnoC-727/GLIC) |
 | CMIC | [Content-Aware Mamba for Learned Image Compression](https://openreview.net/forum?id=WwDNiisZQm) | Yunuo Chen | ICLR2026 | [![Stars](https://img.shields.io/github/stars/UnoC-727/CMIC.svg?style=social&label=Star)](https://github.com/UnoC-727/CMIC) |
 | DeepHQ | [DeepHQ: Learned Hierarchical Quantizer for Progressive Deep Image Coding](https://doi.org/10.1145/3773994) | Jooyoung Lee | ACM TOMM2026 | — |
 | -- | [Learned Image Compression via Sparse Attention and Adaptive Frequency](https://openaccess.thecvf.com/content/CVPR2026/html/Ma_Learned_Image_Compression_via_Sparse_Attention_and_Adaptive_Frequency_CVPR_2026_paper.html) | Huidong Ma | CVPR2026 | — |
-| -- | [When the Teacher Has More Bits: Self-Teacher Latent Distillation for Learned Image Compression](https://www.eurecom.fr/en/publication/8851) | Abdellah El Mennaoui | ECCV2026 | — |
 | -- | [Balanced Rate-Distortion Optimization in Learned Image Compression](https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Balanced_Rate-Distortion_Optimization_in_Learned_Image_Compression_CVPR_2025_paper.html) | Yichi Zhang | CVPR2025 | [link](https://gitlab.com/viper-purdue/Balanced-RD) |
 | Cassic | [Cassic: Towards Content-Adaptive State-Space Models for Learned Image Compression](https://openaccess.thecvf.com/content/ICCV2025/html/Qin_Cassic_Towards_Content-Adaptive_State-Space_Models_for_Learned_Image_Compression_ICCV_2025_paper.html) | Shiyu Qin | ICCV2025 | — |
 | -- | [Efficient Progressive Image Compression with Variance-Aware Masking](https://openaccess.thecvf.com/content/WACV2025/html/Presta_Efficient_Progressive_Image_Compression_with_Variance-Aware_Masking_WACV_2025_paper.html) | Elena Presta | WACV2025 | — |
@@ -110,10 +110,10 @@ Methods primarily optimized for perceptual quality or the rate-distortion-percep
 
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
+| NeFIC | [Next-Frame Decoding for Ultra-Low-Bitrate Image Compression with Video Diffusion Priors](https://arxiv.org/abs/2603.15129) | Yunuo Chen | ECCV2026 | [![Stars](https://img.shields.io/github/stars/UnoC-727/NeFIC.svg?style=social&label=Star)](https://github.com/UnoC-727/NeFIC) |
 | CADC | [CADC: Content Adaptive Diffusion-Based Generative Image Compression](https://openaccess.thecvf.com/content/CVPR2026/html/Sheng_CADC_Content_Adaptive_Diffusion-Based_Generative_Image_Compression_CVPR_2026_paper.html) | Xihua Sheng | CVPR2026 | — |
 | CoD | [CoD: A Diffusion Foundation Model for Image Compression](https://openaccess.thecvf.com/content/CVPR2026/html/Jia_CoD_A_Diffusion_Foundation_Model_for_Image_Compression_CVPR_2026_paper.html) | Zhaoyang Jia | CVPR2026 | [![Stars](https://img.shields.io/github/stars/microsoft/GenCodec.svg?style=social&label=Star)](https://github.com/microsoft/GenCodec/tree/main/CoD) |
 | DiT-IC | [DiT-IC: Aligned Diffusion Transformer for Efficient Image Compression](https://openaccess.thecvf.com/content/CVPR2026/html/Shi_DiT-IC_Aligned_Diffusion_Transformer_for_Efficient_Image_Compression_CVPR_2026_paper.html) | Junqi Shi | CVPR2026 | — |
-| NeFIC | [Next-Frame Decoding for Ultra-Low-Bitrate Image Compression with Video Diffusion Priors](https://arxiv.org/abs/2603.15129) | Yunuo Chen | ECCV2026 | [![Stars](https://img.shields.io/github/stars/UnoC-727/NeFIC.svg?style=social&label=Star)](https://github.com/UnoC-727/NeFIC) |
 | -- | [Ultra-Low Bitrate Perceptual Image Compression with Shallow Encoder](https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Ultra-Low_Bitrate_Perceptual_Image_Compression_with_Shallow_Encoder_CVPR_2026_paper.html) | Tianyu Zhang | CVPR2026 | — |
 | -- | [What Matters in Practical Learned Image Compression](https://openaccess.thecvf.com/content/CVPR2026/html/Tatwawadi_What_Matters_in_Practical_Learned_Image_Compression_CVPR_2026_paper.html) | Kedar Tatwawadi | CVPR2026 | — |
 | -- | [Decouple Distortion from Perception: Region Adaptive Diffusion for Extreme-low Bitrate Perception Image Compression](https://openaccess.thecvf.com/content/CVPR2025/html/Xu_Decouple_Distortion_from_Perception_Region_Adaptive_Diffusion_for_Extreme-low_Bitrate_CVPR_2025_paper.html) | Jinchang Xu | CVPR2025 | — |
