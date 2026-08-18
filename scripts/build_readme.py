@@ -22,7 +22,6 @@ SECTION_ORDER = [
     "distortion-oriented",
     "perception-oriented",
     "other-tasks-encryption",
-    "other-tasks-video",
 ]
 
 SECTIONS = {
@@ -43,10 +42,6 @@ SECTIONS = {
         "Methods primarily optimized for perceptual quality or the rate-distortion-perception trade-off.",
     ),
     "other-tasks-encryption": (
-        "Other tasks",
-        None,
-    ),
-    "other-tasks-video": (
         "Other tasks",
         None,
     ),
@@ -111,8 +106,6 @@ SHORT_NAMES = {
     "l3c-2019": "L3C",
     "deephq-2026": "DeepHQ",
     "causal-contextual-prediction-2022": "CCP",
-    "glc-video-2025": "GLC-Video",
-    "nvc-1b-2026": "NVC-1B",
     "glc-2024": "GLC",
     "segpic-2024": "SegPIC",
     "perco-2024": "PerCo",
@@ -321,8 +314,6 @@ def render(data: dict, papers: list[dict]) -> str:
     ]
 
     for section in SECTION_ORDER:
-        if section == "other-tasks-video":
-            continue
         title = SECTIONS[section][0]
         # Match GitHub's heading-slug behavior: remove punctuation first, then
         # replace every remaining space.  Do not collapse adjacent hyphens.
@@ -359,15 +350,6 @@ def render(data: dict, papers: list[dict]) -> str:
                     "",
                     "| Methods | Paper | First Author | Venue |",
                     "| :--: | :---: | :--: | :--: |",
-                ]
-            )
-        elif section == "other-tasks-video":
-            lines.extend(
-                [
-                    "### Video Coding",
-                    "",
-                    "| Models | Paper | First Author | Venue | Project |",
-                    "| :--: | :---: | :--: | :--: | :--: |",
                 ]
             )
         else:
