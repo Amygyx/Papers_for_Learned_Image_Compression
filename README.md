@@ -7,7 +7,7 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 
 <!-- Paper tables below are generated from data/papers.yml. -->
 **Last curated:** 2026-08-18  
-**Coverage:** 63 selected publications and preprints.
+**Coverage:** 65 selected publications and preprints.
 
 This first curation pass focuses on surveys and standards, lossless/near-lossless coding, distortion-oriented lossy coding, and perception-oriented lossy coding. Semantic or human-machine coding, special image domains, and broader visual compression are currently [deferred](DEFERRED.md).
 
