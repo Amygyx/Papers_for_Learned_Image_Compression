@@ -155,6 +155,7 @@ SHORT_NAMES = {
     "bb-ans-2019": "BB-ANS",
     "local-bits-back-2019": "LBB",
     "diffc-2025": "DiffC",
+    "diffc-gaussian-2022": "DiffC",
     "ddcm-2025": "DDCM",
     "cod-lite-2026": "CoD-Lite",
     "turbo-ddcm-2026": "Turbo-DDCM",
@@ -260,8 +261,10 @@ def validate(data: dict) -> list[dict]:
                 raise ValidationError(f"{paper_id}: encryption records require a method")
             if not isinstance(paper.get("legacy_order"), int):
                 raise ValidationError(f"{paper_id}: encryption records require legacy_order")
-        if paper["status"] == "preprint":
-            raise ValidationError(f"{paper_id}: preprints are retained in DEFERRED.md, not the main index")
+        if paper["status"] == "preprint" and paper.get("include_preprint") is not True:
+            raise ValidationError(
+                f"{paper_id}: preprints require explicit include_preprint: true to appear in the main index"
+            )
 
         _validate_list(paper, "paradigm", ALLOWED_PARADIGMS)
         _validate_list(paper, "focus", ALLOWED_FOCUS)
