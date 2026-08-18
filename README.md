@@ -7,10 +7,10 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 
 ## Contents
 
-- [Surveys, Benchmarks & Standards](#surveys-benchmarks-standards)
-- [Lossless & Near-lossless Compression](#lossless-near-lossless-compression)
-- [Lossy — Distortion-oriented Coding](#lossy-distortion-oriented-coding)
-- [Lossy — Perception-oriented Coding](#lossy-perception-oriented-coding)
+- [Surveys, Benchmarks & Standards](#surveys-benchmarks--standards)
+- [Lossless & Near-lossless Compression](#lossless--near-lossless-compression)
+- [Lossy — Distortion-oriented Coding](#lossy--distortion-oriented-coding)
+- [Lossy — Perception-oriented Coding](#lossy--perception-oriented-coding)
 - [Other tasks](#other-tasks)
 
 ## Tag vocabulary
