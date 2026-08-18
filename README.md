@@ -1,8 +1,11 @@
-<!-- This file is generated from data/papers.yml. Do not edit paper tables directly. -->
 # Papers for Neural Image Compression
+**Purpose:** We aim to provide a summary of neural image compression. More papers will be summarized.
 
-A curated research map for neural still-image compression, maintained by the [Intelligent Media Computing Lab at USTC](https://faculty.ustc.edu.cn/chenzhibo).
+University of Science and Technology of China (USTC), [Intelligent Media Computing Lab](https://faculty.ustc.edu.cn/chenzhibo).
 
+**📌 About new works.** If you want to incorporate your studies (e.g., the link of paper or project) on neural image compression in this repository. Welcome to raise an issue or email us. We will incorporate it into this repository and our survey report as soon as possible.
+
+<!-- Paper tables below are generated from data/papers.yml. -->
 **Last curated:** 2026-08-18  
 **Coverage:** 63 selected publications and preprints.
 
