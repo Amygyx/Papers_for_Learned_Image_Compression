@@ -23,6 +23,10 @@ This file preserves entries that were present before the 2026-08 curation pass b
 - 3DGS.zip: A Survey on 3D Gaussian Splatting Compression Methods — arXiv 2024
 - Image and Video Compression With Neural Networks: A Review — IEEE TCSVT
 
+## Workshop Papers (Not in Main Index)
+
+- [Diffusion-based Compression Quality Tradeoffs without Retraining](https://openaccess.thecvf.com/content/ICCV2025W/AIM/html/Brenig_Diffusion-based_Compression_Quality_Tradeoffs_without_Retraining_ICCVW_2025_paper.html) — ICCV 2025 Workshop
+
 ## Legacy Entries Not Carried Forward
 
 These preprints are retained outside the main index until they have a verified publication status:
