@@ -18,7 +18,6 @@ papers:
     paradigm: [transform]
     focus: [standardization]
     capability: [practical]
-    summary: Describes the first published end-to-end learning-based image coding standard and its interoperable coding pipeline.
 
   - id: jpeg-ai-standard-2024
     title: 'JPEG AI: The First International Standard for Image Coding Based on an End-to-End Learning-Based Approach'
@@ -61,7 +60,6 @@ papers:
     paradigm: [transform]
     focus: [benchmark]
     capability: []
-    summary: A tutorial treatment of learned compression that connects probabilistic modeling, quantization, and rate-distortion learning.
 
   - id: lic-benchmark-2022
     title: 'Learning End-to-End Lossy Image Compression: A Benchmark'
@@ -105,7 +103,6 @@ papers:
     paradigm: [foundation-model]
     focus: [entropy-model]
     capability: []
-    summary: Recasts lossless image entropy modeling as next-pixel prediction with a large language model.
 
   - id: llm-lossless-visual-prompts-2025
     title: Large Language Model for Lossless Image Compression with Visual Prompts
@@ -134,7 +131,6 @@ papers:
     paradigm: [overfitted]
     focus: [entropy-model, adaptation]
     capability: [low-complexity]
-    summary: Combines a dataset-level prior with per-image fitting to reduce decoding complexity while retaining competitive lossless rates.
 
   - id: lossless-inr-2025
     title: Towards Lossless Implicit Neural Representation via Bit Plane Decomposition
@@ -317,7 +313,6 @@ papers:
     paradigm: [autoregressive]
     focus: [entropy-model]
     capability: [practical]
-    summary: Established a practical, parallel hierarchical probabilistic model for full-resolution learned lossless coding.
 
   # Lossy, distortion-oriented coding
   - id: deephq-2026
@@ -403,7 +398,6 @@ papers:
     paradigm: [transform]
     focus: [entropy-model]
     capability: [low-complexity]
-    summary: Introduces a learned dictionary as a dataset-level prior for entropy modeling and improves the rate-latency trade-off.
 
   - id: lalic-2025
     title: Linear Attention Modeling for Learned Image Compression
@@ -432,7 +426,6 @@ papers:
     paradigm: [vq]
     focus: [quantization, adaptation]
     capability: [variable-rate, content-adaptive]
-    summary: Unifies rate and domain adaptation through adaptive lattice vector quantization.
 
   - id: few-shot-domain-adaptation-2025
     title: Few-Shot Domain Adaptation for Learned Image Compression
@@ -657,7 +650,6 @@ papers:
     paradigm: [transform]
     focus: [entropy-model]
     capability: []
-    summary: Combined autoregressive context and hierarchical side information into a foundational learned entropy model.
 
   - id: scale-hyperprior-2018
     title: Variational Image Compression with a Scale Hyperprior
@@ -672,7 +664,6 @@ papers:
     paradigm: [transform]
     focus: [entropy-model]
     capability: []
-    summary: Introduced the scale hyperprior that became a standard building block for learned image codecs.
 
   - id: end-to-end-optimized-2017
     title: End-to-end Optimized Image Compression
@@ -687,7 +678,6 @@ papers:
     paradigm: [transform]
     focus: [transform, quantization, entropy-model]
     capability: []
-    summary: Established the end-to-end rate-distortion training formulation for nonlinear transform coding.
 
   - id: compressive-autoencoders-2017
     title: Lossy Image Compression with Compressive Autoencoders
@@ -731,7 +721,6 @@ papers:
     paradigm: [diffusion, foundation-model]
     focus: [transform, optimization]
     capability: [low-complexity]
-    summary: Trains a compression-oriented diffusion foundation model rather than adapting a text-to-image model to coding.
 
   - id: cadc-2026
     title: 'CADC: Content Adaptive Diffusion-Based Generative Image Compression'
@@ -760,7 +749,6 @@ papers:
     paradigm: [diffusion]
     focus: [transform, optimization]
     capability: [low-complexity, practical]
-    summary: Aligns a diffusion transformer to compact codec latents and reduces reconstruction to one denoising step.
 
   - id: shallow-perceptual-2026
     title: Ultra-Low Bitrate Perceptual Image Compression with Shallow Encoder
@@ -789,7 +777,6 @@ papers:
     paradigm: [transform]
     focus: [optimization]
     capability: [low-complexity, practical, variable-rate]
-    summary: Studies perceptual quality and runtime jointly and demonstrates on-device learned image coding.
 
   - id: diffusion-quality-tradeoffs-2025
     title: Diffusion-based Compression Quality Tradeoffs without Retraining
@@ -832,7 +819,6 @@ papers:
     paradigm: [overfitted]
     focus: [optimization]
     capability: [low-complexity]
-    summary: Uses Wasserstein distortion to obtain strong human-rated perceptual quality with very low decoding complexity.
 
   - id: cdc-2023
     title: Lossy Image Compression with Conditional Diffusion Models
@@ -847,7 +833,6 @@ papers:
     paradigm: [diffusion]
     focus: [transform, optimization]
     capability: []
-    summary: A foundational conditional-diffusion codec for perceptual reconstruction at low bitrates.
 
   - id: hific-2020
     title: High-Fidelity Generative Image Compression
@@ -862,7 +847,6 @@ papers:
     paradigm: [gan]
     focus: [optimization]
     capability: []
-    summary: Established a widely used GAN-based codec and a strong operating point on the rate-distortion-perception surface.
 
   - id: rd-perception-2019
     title: 'Rethinking Lossy Compression: The Rate-Distortion-Perception Tradeoff'
@@ -877,7 +861,6 @@ papers:
     paradigm: [gan]
     focus: [optimization]
     capability: []
-    summary: Formalized the rate-distortion-perception trade-off that underpins modern generative compression.
 
   - id: extreme-gan-compression-2019
     title: Generative Adversarial Networks for Extreme Learned Image Compression
