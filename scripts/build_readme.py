@@ -105,6 +105,9 @@ SHORT_NAMES = {
     "ivpf-2021": "iVPF",
     "l3c-2019": "L3C",
     "deephq-2026": "DeepHQ",
+    "glic-2026": "GLIC",
+    "cmic-2026": "CMIC",
+    "nefic-2026": "NeFIC",
     "kdic-2025": "KDiC",
     "hpcm-2025": "HPCM",
     "cassic-2025": "Cassic",
@@ -118,6 +121,7 @@ SHORT_NAMES = {
     "tcm-2023": "TCM",
     "nvtc-2023": "NVTC",
     "elic-2022": "ELIC",
+    "contextformer-2022": "Contextformer",
     "cod-2026": "CoD",
     "cadc-2026": "CADC",
     "dit-ic-2026": "DiT-IC",
@@ -198,6 +202,8 @@ def validate(data: dict) -> list[dict]:
             raise ValidationError(f"{paper_id}: unsupported section {paper['section']}")
         if paper["status"] not in {"published", "preprint"}:
             raise ValidationError(f"{paper_id}: status must be published or preprint")
+        if "workshop" in paper["venue"].casefold():
+            raise ValidationError(f"{paper_id}: workshop papers are retained in DEFERRED.md, not the main index")
 
         objective = paper["objective"]
         if objective is not None and objective not in ALLOWED_OBJECTIVES:
