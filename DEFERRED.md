@@ -37,5 +37,6 @@ These preprints are retained outside the main index until they have a verified p
 - Rethinking Learned Image Compression: Context is All You Need
 - Bi-Level Spatial and Channel-aware Transformer for Learned Image Compression
 - Diffusion-based Extreme Image Compression with Compressed Feature Initialization — ICLR 2025 submission withdrawn
+- [CoD-Lite: Real-Time Diffusion-Based Generative Image Compression](https://arxiv.org/abs/2604.12525) — arXiv 2026; [code](https://github.com/microsoft/GenCodec/tree/main/CoD_Lite)
 
 Other legacy entries were migrated to the active YAML list, including BaSIC, Few-Shot Domain Adaptation, Window-based Channel Attention, CCA, DeepHQ, WeConvene, the two ICLR 2025 compression papers.
