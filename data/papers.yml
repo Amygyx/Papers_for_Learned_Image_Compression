@@ -5,6 +5,20 @@ metadata:
 
 papers:
   # Representative journal papers
+  - id: diffeic-2025
+    title: Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior
+    first_author: Zhiyuan Li
+    year: 2025
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://doi.org/10.1109/TCSVT.2024.3455576
+    project_url: https://github.com/huai-chang/DiffEIC
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: []
+
   - id: causal-contextual-prediction-2022
     title: Causal Contextual Prediction for Learned Image Compression
     first_author: Zongyu Guo
