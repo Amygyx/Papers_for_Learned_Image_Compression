@@ -34,12 +34,13 @@ The previous encryption section was removed because encryption is not neural ima
 
 ## Legacy Entries Not Carried Forward
 
-These preprints did not meet the current main-list rule of a verified publication or public-code emerging work at the curation cutoff:
+These preprints are retained outside the main index until they have a verified publication status:
 
+- [High Frequency Matters: Uncertainty Guided Image Compression with Wavelet Diffusion](https://arxiv.org/abs/2407.12538) — arXiv 2024; [code](https://github.com/hejiaxiang1/Wavelet-Diffusion)
 - Large Language Model for Lossless Image Compression with Visual Prompts — ICLR 2025 submission, not accepted; no public code
 - Approximately Invertible Neural Network for Learned Image Compression
 - Rethinking Learned Image Compression: Context is All You Need
 - Bi-Level Spatial and Channel-aware Transformer for Learned Image Compression
 - Diffusion-based Extreme Image Compression with Compressed Feature Initialization — ICLR 2025 submission withdrawn
 
-Other legacy entries were migrated to the active YAML list, including BaSIC, Few-Shot Domain Adaptation, Window-based Channel Attention, CCA, DeepHQ, WeConvene, the two ICLR 2025 compression papers, and High Frequency Matters.
+Other legacy entries were migrated to the active YAML list, including BaSIC, Few-Shot Domain Adaptation, Window-based Channel Attention, CCA, DeepHQ, WeConvene, the two ICLR 2025 compression papers.
