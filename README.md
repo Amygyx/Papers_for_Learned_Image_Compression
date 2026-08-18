@@ -7,7 +7,7 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 
 <!-- Paper tables below are generated from data/papers.yml. -->
 **Last curated:** 2026-08-18  
-**Coverage:** 64 selected publications and preprints.
+**Coverage:** 63 selected publications and preprints.
 
 This first curation pass focuses on surveys and standards, lossless/near-lossless coding, distortion-oriented lossy coding, and perception-oriented lossy coding. Semantic or human-machine coding, special image domains, and broader visual compression are currently [deferred](DEFERRED.md).
 
@@ -17,7 +17,6 @@ This first curation pass focuses on surveys and standards, lossless/near-lossles
 - [Lossless & Near-lossless Compression](#lossless-near-lossless-compression)
 - [Lossy — Distortion-oriented Coding](#lossy-distortion-oriented-coding)
 - [Lossy — Perception-oriented Coding](#lossy-perception-oriented-coding)
-- [Emerging Works](#emerging-works)
 
 ## Tag vocabulary
 
@@ -116,22 +115,3 @@ Methods primarily optimized for perceptual quality or the rate-distortion-percep
 | 2020 | [High-Fidelity Generative Image Compression](https://proceedings.neurips.cc/paper/2020/hash/8a50bae297807da9e97722a0b3fd8f27-Abstract.html) | Fabian Mentzer | NeurIPS | `perception` · `gan` · `optimization` | [![Stars](https://img.shields.io/github/stars/tensorflow/compression.svg?style=social&label=Star)](https://github.com/tensorflow/compression/tree/master/models/hific) |
 | 2019 | [Generative Adversarial Networks for Extreme Learned Image Compression](https://openaccess.thecvf.com/content_ICCV_2019/html/Agustsson_Generative_Adversarial_Networks_for_Extreme_Learned_Image_Compression_ICCV_2019_paper.html) | Eirikur Agustsson | ICCV | `perception` · `gan` · `quantization` · `optimization` | — |
 | 2019 | [Rethinking Lossy Compression: The Rate-Distortion-Perception Tradeoff](https://proceedings.mlr.press/v97/blau19a.html) | Yochai Blau | ICML | `perception` · `gan` · `optimization` | — |
-
-## Emerging Works
-
-Selective preprints with public code and a clearly differentiated compression contribution.
-
-| Year | Paper | First author | Venue | Tags | Code / project |
-| :--: | --- | --- | --- | --- | :--: |
-| 2024 | [High Frequency Matters: Uncertainty Guided Image Compression with Wavelet Diffusion](https://arxiv.org/abs/2407.12538) | Juan Song | arXiv (Preprint) | `perception` · `diffusion` · `transform` · `optimization` · `content-adaptive` | [![Stars](https://img.shields.io/github/stars/hejiaxiang1/Wavelet-Diffusion.svg?style=social&label=Star)](https://github.com/hejiaxiang1/Wavelet-Diffusion) |
-
-## Contribution policy
-
-Accepted conference and journal papers are the default for the main list. A preprint is eligible only when it has public code and a clearly differentiated compression contribution. Please edit `data/papers.yml`, then run:
-
-```bash
-python scripts/build_readme.py
-python scripts/build_readme.py --check
-```
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the schema and review checklist.
