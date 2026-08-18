@@ -286,11 +286,6 @@ def _project_cell(project_url: str | None) -> str:
 
 
 def render(data: dict, papers: list[dict]) -> str:
-    metadata = data["metadata"]
-    counts = {section: 0 for section in SECTION_ORDER}
-    for paper in papers:
-        counts[paper["section"]] += 1
-
     lines = [
         "# Papers for Neural Image Compression",
         "**Purpose:** We aim to provide a summary of neural image compression. More papers will be summarized.",
@@ -301,15 +296,6 @@ def render(data: dict, papers: list[dict]) -> str:
         "**📌 About new works.** If you want to incorporate your studies (e.g., the link of paper or project) "
         "on neural image compression in this repository. Welcome to raise an issue or email us. We will "
         "incorporate it into this repository and our survey report as soon as possible.",
-        "",
-        "<!-- Paper tables below are generated from data/papers.yml. -->",
-        f"**Last curated:** {metadata['last_curated']}  ",
-        f"**Coverage:** {len(papers)} selected publications and preprints.",
-        "",
-        "This first curation pass focuses on surveys and standards, lossless/near-lossless coding, "
-        "distortion-oriented lossy coding, and perception-oriented lossy coding. Semantic or "
-        "human-machine coding, special image domains, and broader visual compression are currently "
-        "[deferred](DEFERRED.md).",
         "",
         "## Contents",
         "",
