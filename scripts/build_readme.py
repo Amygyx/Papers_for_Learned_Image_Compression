@@ -76,6 +76,22 @@ ALLOWED_CAPABILITIES = {
     "scalable",
     "variable-rate",
 }
+
+# Approximate annual main-conference chronology.  This only breaks ties within
+# a year; journals follow the conference venues and use title order as a tie-breaker.
+CONFERENCE_RECENCY = {
+    "NeurIPS": 1200,
+    "ACCV": 1100,
+    "ICCV": 1000,
+    "ACM MM": 950,
+    "ECCV": 900,
+    "BMVC": 850,
+    "ICML": 700,
+    "CVPR": 600,
+    "ICLR": 450,
+    "WACV": 200,
+    "AAAI": 100,
+}
 REQUIRED_FIELDS = {
     "id",
     "title",
@@ -341,8 +357,8 @@ def render(data: dict, papers: list[dict]) -> str:
             section_papers = sorted(
                 section_papers,
                 key=lambda paper: (
-                    0 if paper["year"] == 2026 and paper["venue"] == "ECCV" else 1,
                     -paper["year"],
+                    -CONFERENCE_RECENCY.get(paper["venue"].removeprefix("IEEE "), 0),
                     paper["title"].casefold(),
                 ),
             )
