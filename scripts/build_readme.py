@@ -205,9 +205,6 @@ def validate(data: dict) -> list[dict]:
                 raise ValidationError(f"Duplicate arXiv id: {arxiv_id}")
             arxiv_ids.add(arxiv_id)
 
-        summary = paper.get("summary")
-        if summary is not None and (not isinstance(summary, str) or not summary.strip()):
-            raise ValidationError(f"{paper_id}: summary must be a non-empty string when present")
 
     return papers
 
@@ -227,10 +224,7 @@ def _tag_list(paper: dict) -> str:
 
 
 def _paper_cell(paper: dict) -> str:
-    cell = f"[{_escape(paper['title'])}]({paper['paper_url']})"
-    if paper.get("summary"):
-        cell += f"<br><sub>{_escape(paper['summary'])}</sub>"
-    return cell
+    return f"[{_escape(paper['title'])}]({paper['paper_url']})"
 
 
 def render(data: dict, papers: list[dict]) -> str:
