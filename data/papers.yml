@@ -89,6 +89,35 @@ papers:
     focus: [benchmark]
     capability: []
 
+
+  - id: image-video-compression-review-2019
+    title: 'Image and Video Compression With Neural Networks: A Review'
+    first_author: Siwei Ma
+    year: 2019
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://ieeexplore.ieee.org/document/8693636
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [benchmark]
+    capability: []
+
+  - id: image-encryption-survey-2024
+    title: 'A comprehensive survey on image encryption: Taxonomy, challenges, and future directions'
+    first_author: Morteza SaberiKamarposhti
+    year: 2024
+    venue: Chaos, Solitons and Fractals
+    status: published
+    paper_url: https://www.sciencedirect.com/science/article/pii/S0960077923012638
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+
   # Lossless and near-lossless compression
   - id: llm-lossless-next-pixel-2025
     title: 'Large Language Models for Lossless Image Compression: Next-Pixel Prediction in Language Space is All You Need'
