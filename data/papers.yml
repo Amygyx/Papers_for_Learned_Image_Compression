@@ -1071,7 +1071,7 @@ papers:
   # Additional perception-oriented coding
   - id: cod-lite-2026
     title: 'CoD-Lite: Real-Time Diffusion-Based Generative Image Compression'
-    first_author: Bin Li
+    first_author: Zhaoyang Jia
     year: 2026
     venue: ICML
     status: published
