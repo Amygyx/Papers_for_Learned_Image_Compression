@@ -121,7 +121,7 @@ SHORT_NAMES = {
     "ivpf-2021": "iVPF",
     "l3c-2019": "L3C",
     "deephq-2026": "DeepHQ",
-    "causal-contextual-prediction-2022": "CCP",
+    "causal-contextual-prediction-2022": "--",
     "diffeic-2025": "DiffEIC",
     "rdeic-2025": "RDEIC",
     "glc-2024": "GLC",
