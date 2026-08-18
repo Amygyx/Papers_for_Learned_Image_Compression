@@ -303,9 +303,9 @@ def render(data: dict, papers: list[dict]) -> str:
 
     for section in SECTION_ORDER:
         title = SECTIONS[section][0]
-        anchor = title.lower().replace("—", "").replace("&", "").replace(" ", "-")
-        anchor = re.sub(r"[^a-z0-9-]", "", anchor)
-        anchor = re.sub(r"-+", "-", anchor).strip("-")
+        # Match GitHub's heading-slug behavior: remove punctuation first, then
+        # replace every remaining space.  Do not collapse adjacent hyphens.
+        anchor = re.sub(r"[^a-z0-9 -]", "", title.lower()).replace(" ", "-")
         lines.append(f"- [{title}](#{anchor})")
 
     lines.extend(["", "## Tag vocabulary", ""])
