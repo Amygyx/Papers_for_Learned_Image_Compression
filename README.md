@@ -15,8 +15,6 @@ University of Science and Technology of China (USTC), [Intelligent Media Computi
 
 ## Surveys, Benchmarks & Standards
 
-Surveys, evaluation resources, and standardization milestones for neural image compression.
-
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
 | -- | [An Overview of the JPEG AI Learning-Based Image Coding Standard](https://doi.org/10.1109/TCSVT.2025.3613244) | S. Esenlik | TCSVT2026 | [link](https://jpeg.org/jpegai/) |
@@ -29,8 +27,6 @@ Surveys, evaluation resources, and standardization milestones for neural image c
 | -- | [Image and Video Compression With Neural Networks: A Review](https://ieeexplore.ieee.org/document/8693636) | Siwei Ma | TCSVT2019 | — |
 
 ## Lossless & Near-lossless Compression
-
-
 
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
@@ -54,8 +50,6 @@ Surveys, evaluation resources, and standardization milestones for neural image c
 | BB-ANS | [Practical Lossless Compression with Latent Variables using Bits Back Coding](https://openreview.net/forum?id=ryE98iR5tm) | James Townsend | ICLR2019 | [![Stars](https://img.shields.io/github/stars/bits-back/bits-back.svg?style=social&label=Star)](https://github.com/bits-back/bits-back) |
 
 ## Lossy — Distortion-oriented Coding
-
-Methods primarily optimized for rate-distortion performance using pixel-domain fidelity metrics.
 
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
@@ -101,8 +95,6 @@ Methods primarily optimized for rate-distortion performance using pixel-domain f
 | -- | [Lossy Image Compression with Compressive Autoencoders](https://openreview.net/forum?id=rJiNwv9gg) | Lucas Theis | ICLR2017 | — |
 
 ## Lossy — Perception-oriented Coding
-
-Methods primarily optimized for perceptual quality or the rate-distortion-perception trade-off.
 
 | Models | Paper | First Author | Venue | Project |
 | :--: | :---: | :--: | :--: | :--: |
