@@ -1,0 +1,1394 @@
+metadata:
+  title: Papers for Neural Image Compression
+  last_curated: '2026-08-18'
+  scope: Curated research on neural still-image compression.
+
+papers:
+  # Representative journal papers
+  - id: rdeic-2025
+    title: 'RDEIC: Accelerating Diffusion-Based Extreme Image Compression with Relay Residual Diffusion'
+    first_author: Zhiyuan Li
+    year: 2025
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://doi.org/10.1109/TCSVT.2025.3578127
+    project_url: https://github.com/huai-chang/RDEIC
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: [low-complexity]
+
+  - id: diffeic-2025
+    title: Towards Extreme Image Compression with Latent Feature Guidance and Diffusion Prior
+    first_author: Zhiyuan Li
+    year: 2025
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://doi.org/10.1109/TCSVT.2024.3455576
+    project_url: https://github.com/huai-chang/DiffEIC
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: []
+
+  - id: causal-contextual-prediction-2022
+    title: Causal Contextual Prediction for Learned Image Compression
+    first_author: Zongyu Guo
+    year: 2022
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://doi.org/10.1109/TCSVT.2021.3089491
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  # Additional formally published top-conference papers from the recent backlog
+  - id: glc-2024
+    title: Generative Latent Coding for Ultra-Low Bitrate Image Compression
+    first_author: Zhaoyang Jia
+    year: 2024
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2024/html/Jia_Generative_Latent_Coding_for_Ultra-Low_Bitrate_Image_Compression_CVPR_2024_paper.html
+    project_url: https://github.com/jzyustc/GLC
+    section: perception-oriented
+    objective: perception
+    paradigm: [vq]
+    focus: [transform, quantization]
+    capability: []
+
+  - id: backward-compatible-continual-lic-2024
+    title: Towards Backward-Compatible Continual Learning of Image Compression
+    first_author: Zhihao Duan
+    year: 2024
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2024/html/Duan_Towards_Backward-Compatible_Continual_Learning_of_Image_Compression_CVPR_2024_paper.html
+    project_url: https://gitlab.com/viper-purdue/continual-compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [adaptation]
+    capability: [variable-rate, content-adaptive]
+
+  - id: foundation-diffusion-lic-2024
+    title: Lossy Image Compression with Foundation Diffusion Models
+    first_author: Lucas Relic
+    year: 2024
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7844_ECCV_2024_paper.php
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [transform, optimization]
+    capability: [low-complexity]
+
+  - id: segpic-2024
+    title: Region-Adaptive Transform with Segmentation Prior for Image Compression
+    first_author: Yuxi Liu
+    year: 2024
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/6270_ECCV_2024_paper.php
+    project_url: https://github.com/GityuxiLiu/SegPIC-for-Image-Compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, adaptation]
+    capability: [content-adaptive]
+
+  - id: perco-2024
+    title: Towards Image Compression with Perfect Realism at Ultra-Low Bitrates
+    first_author: Marlene Careil
+    year: 2024
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=ktdETU9JBg
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [vq, diffusion]
+    focus: [transform, quantization]
+    capability: []
+
+  - id: idempotence-perceptual-lic-2024
+    title: Idempotence and Perceptual Image Compression
+    first_author: Tongda Xu
+    year: 2024
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=Cy5v64DqEF
+    project_url: https://github.com/tongdaxu/Idempotence-and-Perceptual-Image-Compression
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [optimization]
+    capability: []
+
+  - id: sga-plus-2024
+    title: Robustly Overfitting Latents for Flexible Neural Image Compression
+    first_author: Yura Perugachi-Diaz
+    year: 2024
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/c1233cb30ef11a3fe6ab10aa96beabaf-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [overfitted]
+    focus: [optimization]
+    capability: [content-adaptive]
+
+  - id: olvq-2024
+    title: Learning Optimal Lattice Vector Quantizers for End-to-End Neural Image Compression
+    first_author: Xi Zhang
+    year: 2024
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/c09916f6f0c428a97a09a53648e5002e-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [vq]
+    focus: [quantization]
+    capability: [low-complexity]
+
+  - id: efficient-no-ar-2023
+    title: Towards Efficient Image Compression Without Autoregressive Models
+    first_author: Muhammad Salman Ali
+    year: 2023
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2023/hash/170dc3e41f2d03e327e04dbab0fccbfb-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  # Recently verified top-conference papers
+  - id: glic-2026
+    title: Adaptive Learned Image Compression with Graph Neural Networks
+    first_author: Yunuo Chen
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Adaptive_Learned_Image_Compression_with_Graph_Neural_Networks_CVPR_2026_paper.html
+    project_url: https://github.com/UnoC-727/GLIC
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, adaptation]
+    capability: [content-adaptive]
+
+  - id: sparse-attention-adaptive-frequency-2026
+    title: Learned Image Compression via Sparse Attention and Adaptive Frequency
+    first_author: Huidong Ma
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Ma_Learned_Image_Compression_via_Sparse_Attention_and_Adaptive_Frequency_CVPR_2026_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, optimization]
+    capability: [content-adaptive, low-complexity]
+
+  - id: cmic-2026
+    title: Content-Aware Mamba for Learned Image Compression
+    first_author: Yunuo Chen
+    year: 2026
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=WwDNiisZQm
+    project_url: https://github.com/UnoC-727/CMIC
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, adaptation]
+    capability: [content-adaptive, low-complexity]
+
+  - id: self-teacher-latent-distillation-2026
+    title: 'When the Teacher Has More Bits: Self-Teacher Latent Distillation for Learned Image Compression'
+    first_author: Abdellah El Mennaoui
+    year: 2026
+    venue: ECCV
+    status: published
+    paper_url: https://www.eurecom.fr/en/publication/8851
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [optimization]
+    capability: []
+
+  - id: nefic-2026
+    title: Next-Frame Decoding for Ultra-Low-Bitrate Image Compression with Video Diffusion Priors
+    first_author: Yunuo Chen
+    year: 2026
+    venue: ECCV
+    status: published
+    paper_url: https://arxiv.org/abs/2603.15129
+    project_url: https://github.com/UnoC-727/NeFIC
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: [low-complexity]
+
+  - id: contextformer-2022
+    title: 'Contextformer: A Transformer with Spatio-Channel Attention for Context Modeling in Learned Image Compression'
+    first_author: Ahmet Burakhan Koyuncu
+    year: 2022
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/6046_ECCV_2022_paper.php
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  - id: content-oriented-lic-2022
+    title: Content-Oriented Learned Image Compression
+    first_author: Meng Li
+    year: 2022
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/7542_ECCV_2022_paper.php
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [adaptation, entropy-model]
+    capability: [content-adaptive]
+
+  # Surveys, benchmarks, and standards
+  - id: jpeg-ai-overview-2026
+    title: An Overview of the JPEG AI Learning-Based Image Coding Standard
+    first_author: S. Esenlik
+    year: 2026
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://doi.org/10.1109/TCSVT.2025.3613244
+    project_url: https://jpeg.org/jpegai/
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [standardization]
+    capability: [practical]
+
+  - id: jpeg-ai-standard-2024
+    title: 'JPEG AI: The First International Standard for Image Coding Based on an End-to-End Learning-Based Approach'
+    first_author: E. Alshina
+    year: 2024
+    venue: IEEE MultiMedia
+    status: published
+    paper_url: https://doi.org/10.1109/MMUL.2024.3485255
+    project_url: https://jpeg.org/jpegai/
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [standardization]
+    capability: [practical]
+
+  - id: learning-driven-survey-2023
+    title: 'Learning-driven lossy image compression: A comprehensive survey'
+    first_author: Sonain Jamil
+    year: 2023
+    venue: Engineering Applications of Artificial Intelligence
+    status: published
+    paper_url: https://doi.org/10.1016/j.engappai.2023.106361
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [benchmark]
+    capability: []
+
+  - id: neural-data-compression-intro-2023
+    title: An Introduction to Neural Data Compression
+    first_author: Yibo Yang
+    year: 2023
+    venue: Foundations and Trends in Computer Graphics and Vision
+    status: published
+    paper_url: https://www.nowpublishers.com/article/Details/CGV-107
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [benchmark]
+    capability: []
+
+  - id: lic-benchmark-2022
+    title: 'Learning End-to-End Lossy Image Compression: A Benchmark'
+    first_author: Yueyu Hu
+    year: 2022
+    venue: IEEE TPAMI
+    status: published
+    paper_url: https://arxiv.org/abs/2002.03711
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [benchmark]
+    capability: []
+
+  - id: deep-architectures-review-2022
+    title: 'Deep Architectures for Image Compression: A Critical Review'
+    first_author: Dipti Mishra
+    year: 2022
+    venue: Signal Processing
+    status: published
+    paper_url: https://doi.org/10.1016/j.sigpro.2021.108346
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [benchmark]
+    capability: []
+
+  - id: image-video-compression-review-2019
+    title: 'Image and Video Compression With Neural Networks: A Review'
+    first_author: Siwei Ma
+    year: 2019
+    venue: IEEE TCSVT
+    status: published
+    paper_url: https://ieeexplore.ieee.org/document/8693636
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: [transform]
+    focus: [benchmark]
+    capability: []
+
+  - id: image-encryption-survey-2024
+    title: 'A comprehensive survey on image encryption: Taxonomy, challenges, and future directions'
+    first_author: Morteza SaberiKamarposhti
+    year: 2024
+    venue: Chaos, Solitons and Fractals
+    status: published
+    paper_url: https://www.sciencedirect.com/science/article/pii/S0960077923012638
+    project_url: null
+    section: surveys-benchmarks-standards
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+
+  # Other tasks — Encryption
+  - id: dynamic-feedback-image-privacy-2024
+    title: Dynamic feedback bit-level image privacy protection based on chaos and information hiding
+    first_author: Jinlong Zhang
+    year: 2024
+    venue: scientific Reports, 2024
+    status: published
+    paper_url: https://www.nature.com/articles/s41598-024-53325-4
+    project_url: null
+    section: other-tasks-encryption
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+    method: Visual Cryptography
+    legacy_order: 1
+
+  - id: multi-level-privacy-traffic-images-2024
+    title: A multi-level privacy-preserving scheme for extracting traffic images
+    first_author: Xiaofei He
+    year: 2024
+    venue: Signal Processing, 2024
+    status: published
+    paper_url: https://www.sciencedirect.com/science/article/pii/S0165168424000641
+    project_url: null
+    section: other-tasks-encryption
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+    method: CS
+    legacy_order: 2
+
+  - id: dna-image-compression-encryption-2023
+    title: A novel image compression and encryption scheme based on conservative chaotic system and DNA method
+    first_author: Xin Wu
+    year: 2023
+    venue: Chaos, Solitons and Fractals, 2023
+    status: published
+    paper_url: https://www.sciencedirect.com/science/article/pii/S0960077923003934?via%3Dihub
+    project_url: null
+    section: other-tasks-encryption
+    objective: null
+    paradigm: []
+    focus: []
+    capability: []
+    method: DNA
+    legacy_order: 3
+
+  # Additional lossless coding foundations
+  - id: bit-swap-2019
+    title: 'Bit-Swap: Recursive Bits-Back Coding for Lossless Compression with Hierarchical Latent Variables'
+    first_author: Friso Kingma
+    year: 2019
+    venue: ICML
+    status: published
+    paper_url: https://proceedings.mlr.press/v97/kingma19a.html
+    project_url: https://github.com/fhkingma/bitswap
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [entropy-model]
+    capability: []
+
+  - id: local-bits-back-2019
+    title: Compression with Flows via Local Bits-Back Coding
+    first_author: Jonathan Ho
+    year: 2019
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2019/hash/f6e794a75c5d51de081dbefa224304f9-Abstract.html
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: bb-ans-2019
+    title: Practical Lossless Compression with Latent Variables using Bits Back Coding
+    first_author: James Townsend
+    year: 2019
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=ryE98iR5tm
+    project_url: https://github.com/bits-back/bits-back
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  # Lossless and near-lossless compression
+  - id: llm-lossless-next-pixel-2025
+    title: 'Large Language Models for Lossless Image Compression: Next-Pixel Prediction in Language Space is All You Need'
+    first_author: Kecheng Chen
+    year: 2025
+    venue: NeurIPS
+    status: published
+    paper_url: https://openreview.net/forum?id=FXBBy1caOX
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [foundation-model]
+    focus: [entropy-model]
+    capability: []
+
+  - id: fnlic-2025
+    title: Fitted Neural Lossless Image Compression
+    first_author: Zhe Zhang
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Fitted_Neural_Lossless_Image_Compression_CVPR_2025_paper.html
+    project_url: https://github.com/ZZ022/FNLIC
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [overfitted]
+    focus: [entropy-model, adaptation]
+    capability: [low-complexity]
+
+  - id: lossless-inr-2025
+    title: Towards Lossless Implicit Neural Representation via Bit Plane Decomposition
+    first_author: Woo Kyoung Han
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Han_Towards_Lossless_Implicit_Neural_Representation_via_Bit_Plane_Decomposition_CVPR_2025_paper.html
+    project_url: https://github.com/WooKyoungHan/LosslessINR
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [inr]
+    focus: [quantization]
+    capability: []
+
+  - id: bit-plane-lossless-2024
+    title: Learned Lossless Image Compression based on Bit Plane Slicing
+    first_author: Zhe Zhang
+    year: 2024
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Learned_Lossless_Image_Compression_based_on_Bit_Plane_Slicing_CVPR_2024_paper.html
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [autoregressive]
+    focus: [entropy-model]
+    capability: []
+
+  - id: dlpr-2024
+    title: Deep Lossy Plus Residual Coding for Lossless and Near-lossless Image Compression
+    first_author: Yuanchao Bai
+    year: 2024
+    venue: IEEE TPAMI
+    status: published
+    paper_url: https://doi.org/10.1109/TPAMI.2023.3348486
+    project_url: https://github.com/BYchao100/Deep-Lossy-Plus-Residual-Coding
+    section: lossless-near-lossless
+    objective: near-lossless
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [scalable]
+
+  - id: lc-fdnet-2022
+    title: Learned Lossless Image Compression With Frequency Decomposition Network
+    first_author: Hochang Rhee
+    year: 2022
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2022/html/Rhee_LC-FDNet_Learned_Lossless_Image_Compression_With_Frequency_Decomposition_Network_CVPR_2022_paper.html
+    project_url: https://github.com/myideaisgood/LC-FDNet
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [autoregressive]
+    focus: [transform, entropy-model]
+    capability: []
+
+  - id: pilc-2022
+    title: Practical Image Lossless Compression With an End-to-End GPU Oriented Neural Framework
+    first_author: Ning Kang
+    year: 2022
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2022/html/Kang_PILC_Practical_Image_Lossless_Compression_With_an_End-to-End_GPU_Oriented_CVPR_2022_paper.html
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [autoregressive]
+    focus: [entropy-model]
+    capability: [low-complexity, practical]
+
+  - id: idf-plus-plus-2021
+    title: 'IDF++: Analyzing and Improving Integer Discrete Flows for Lossless Compression'
+    first_author: Rianne van den Berg
+    year: 2021
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=MBOyiNnYthd
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [transform]
+    capability: []
+
+  - id: iflow-2021
+    title: 'iFlow: Numerically Invertible Flows for Efficient Lossless Compression via a Uniform Coder'
+    first_author: Shifeng Zhang
+    year: 2021
+    venue: NeurIPS
+    status: published
+    paper_url: https://arxiv.org/abs/2111.00965
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [transform, entropy-model]
+    capability: []
+
+  - id: osoa-2021
+    title: 'OSOA: One-Shot Online Adaptation of Deep Generative Models for Lossless Compression'
+    first_author: Chen Zhang
+    year: 2021
+    venue: NeurIPS
+    status: published
+    paper_url: https://arxiv.org/abs/2111.01662
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [autoregressive]
+    focus: [adaptation, entropy-model]
+    capability: [content-adaptive]
+
+  - id: monte-carlo-bits-back-2021
+    title: Improving Lossless Compression Rates via Monte Carlo Bits-Back Coding
+    first_author: Yangjun Ruan
+    year: 2021
+    venue: ICML
+    status: published
+    paper_url: https://arxiv.org/abs/2102.11086
+    project_url: https://github.com/ryoungj/mcbits
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [entropy-model]
+    capability: []
+
+  - id: ivpf-2021
+    title: 'iVPF: Numerical Invertible Volume Preserving Flow for Efficient Lossless Compression'
+    first_author: Shifeng Zhang
+    year: 2021
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2021/html/Zhang_iVPF_Numerical_Invertible_Volume_Preserving_Flow_for_Efficient_Lossless_Compression_CVPR_2021_paper.html
+    project_url: null
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [flow]
+    focus: [transform]
+    capability: []
+
+  - id: scalable-near-lossless-2021
+    title: Learning Scalable l-infinity-constrained Near-lossless Image Compression via Joint Lossy Image and Residual Compression
+    first_author: Yuanchao Bai
+    year: 2021
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2021/papers/Bai_Learning_Scalable_lY-Constrained_Near-Lossless_Image_Compression_via_Joint_Lossy_Image_CVPR_2021_paper.pdf
+    project_url: https://github.com/BYchao100/Scalable-Near-lossless-Image-Compression
+    section: lossless-near-lossless
+    objective: near-lossless
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [scalable]
+
+  - id: ultra-high-fidelity-2021
+    title: Ultra High Fidelity Deep Image Decompression With l-infinity-Constrained Compression
+    first_author: Xi Zhang
+    year: 2021
+    venue: IEEE TIP
+    status: published
+    paper_url: https://ieeexplore.ieee.org/document/9277919
+    project_url: null
+    section: lossless-near-lossless
+    objective: near-lossless
+    paradigm: [transform]
+    focus: [optimization]
+    capability: []
+
+  - id: l3c-2019
+    title: Practical Full Resolution Learned Lossless Image Compression
+    first_author: Fabian Mentzer
+    year: 2019
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content_CVPR_2019/html/Mentzer_Practical_Full_Resolution_Learned_Lossless_Image_Compression_CVPR_2019_paper.html
+    project_url: https://github.com/fab-jul/L3C-PyTorch
+    section: lossless-near-lossless
+    objective: lossless
+    paradigm: [autoregressive]
+    focus: [entropy-model]
+    capability: [practical]
+
+  # Lossy, distortion-oriented coding
+  - id: deephq-2026
+    title: 'DeepHQ: Learned Hierarchical Quantizer for Progressive Deep Image Coding'
+    first_author: Jooyoung Lee
+    year: 2026
+    venue: ACM TOMM
+    status: published
+    paper_url: https://doi.org/10.1145/3773994
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [quantization]
+    capability: [progressive, variable-rate]
+
+  - id: kdic-2025
+    title: Knowledge Distillation for Learned Image Compression
+    first_author: Yunuo Chen
+    year: 2025
+    venue: ICCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/ICCV2025/html/Chen_Knowledge_Distillation_for_Learned_Image_Compression_ICCV_2025_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [optimization]
+    capability: [low-complexity, practical]
+
+  - id: hpcm-2025
+    title: Learned Image Compression with Hierarchical Progressive Context Modeling
+    first_author: Yuqi Li
+    year: 2025
+    venue: ICCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/ICCV2025/html/Li_Learned_Image_Compression_with_Hierarchical_Progressive_Context_Modeling_ICCV_2025_paper.html
+    project_url: https://github.com/lyq133/LIC-HPCM
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: cassic-2025
+    title: 'Cassic: Towards Content-Adaptive State-Space Models for Learned Image Compression'
+    first_author: Shiyu Qin
+    year: 2025
+    venue: ICCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/ICCV2025/html/Qin_Cassic_Towards_Content-Adaptive_State-Space_Models_for_Learned_Image_Compression_ICCV_2025_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, entropy-model]
+    capability: [content-adaptive, low-complexity]
+
+  - id: balanced-rd-2025
+    title: Balanced Rate-Distortion Optimization in Learned Image Compression
+    first_author: Yichi Zhang
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Balanced_Rate-Distortion_Optimization_in_Learned_Image_Compression_CVPR_2025_paper.html
+    project_url: https://gitlab.com/viper-purdue/Balanced-RD
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [optimization]
+    capability: []
+
+  - id: dcae-2025
+    title: Learned Image Compression with Dictionary-based Entropy Model
+    first_author: Jingbo Lu
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Lu_Learned_Image_Compression_with_Dictionary-based_Entropy_Model_CVPR_2025_paper.html
+    project_url: https://github.com/LabShuHangGU/DCAE
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: lalic-2025
+    title: Linear Attention Modeling for Learned Image Compression
+    first_author: Donghui Feng
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Feng_Linear_Attention_Modeling_for_Learned_Image_Compression_CVPR_2025_paper.html
+    project_url: https://github.com/sjtu-medialab/RwkvCompress
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, entropy-model]
+    capability: [low-complexity]
+
+  - id: adaptive-lvq-2025
+    title: Multirate Neural Image Compression with Adaptive Lattice Vector Quantization
+    first_author: Hao Xu
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Xu_Multirate_Neural_Image_Compression_with_Adaptive_Lattice_Vector_Quantization_CVPR_2025_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [vq]
+    focus: [quantization, adaptation]
+    capability: [variable-rate, content-adaptive]
+
+  - id: few-shot-domain-adaptation-2025
+    title: Few-Shot Domain Adaptation for Learned Image Compression
+    first_author: Tianyu Zhang
+    year: 2025
+    venue: AAAI
+    status: published
+    paper_url: https://doi.org/10.1609/aaai.v39i10.33100
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [adaptation]
+    capability: [content-adaptive, low-complexity]
+
+  - id: tta-distribution-regularization-2025
+    title: Test-time Adaptation for Image Compression with Distribution Regularization
+    first_author: Kecheng Chen
+    year: 2025
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=bsnRUkVn63
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [adaptation, entropy-model]
+    capability: [content-adaptive]
+
+  - id: variance-aware-progressive-2025
+    title: Efficient Progressive Image Compression with Variance-Aware Masking
+    first_author: Elena Presta
+    year: 2025
+    venue: WACV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/WACV2025/html/Presta_Efficient_Progressive_Image_Compression_with_Variance-Aware_Masking_WACV_2025_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [quantization, entropy-model]
+    capability: [progressive, variable-rate, low-complexity]
+
+  - id: cca-2024
+    title: Causal Context Adjustment Loss for Learned Image Compression
+    first_author: Minghao Han
+    year: 2024
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/f074a994e062146561db9cdc63999efa-Abstract-Conference.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model, optimization]
+    capability: [low-complexity]
+
+  - id: weconvene-2024
+    title: 'WeConvene: Learned Image Compression with Wavelet-Domain Convolution and Entropy Model'
+    first_author: Haisheng Fu
+    year: 2024
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06635.pdf
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, entropy-model]
+    capability: [low-complexity]
+
+  - id: basic-2024
+    title: 'BaSIC: BayesNet Structure Learning for Computational Scalable Neural Image Compression'
+    first_author: Yufeng Zhang
+    year: 2024
+    venue: ECCV
+    status: published
+    paper_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03640.pdf
+    project_url: https://github.com/worldlife123/cbench_BaSIC
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: wclic-2024
+    title: Window-based Channel Attention for Wavelet-enhanced Learned Image Compression
+    first_author: Heng Xu
+    year: 2024
+    venue: ACCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/ACCV2024/html/Xu_Window-based_Channel_Attention_for_Wavelet-enhanced_Learned_Image_Compression_ACCV_2024_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform]
+    capability: []
+
+  - id: tcm-2023
+    title: Learned Image Compression with Mixed Transformer-CNN Architectures
+    first_author: Jinming Liu
+    year: 2023
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2023/html/Liu_Learned_Image_Compression_With_Mixed_Transformer-CNN_Architectures_CVPR_2023_paper.html
+    project_url: https://github.com/jmliu206/LIC_TCM
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, entropy-model]
+    capability: []
+
+  - id: nvtc-2023
+    title: 'NVTC: Nonlinear Vector Transform Coding'
+    first_author: Runsen Feng
+    year: 2023
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2023/html/Feng_NVTC_Nonlinear_Vector_Transform_Coding_CVPR_2023_paper.html
+    project_url: https://github.com/USTC-IMCL/NVTC
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [vq]
+    focus: [transform, quantization]
+    capability: []
+
+  - id: elic-2022
+    title: 'ELIC: Efficient Learned Image Compression with Unevenly Grouped Space-Channel Contextual Adaptive Coding'
+    first_author: Dailan He
+    year: 2022
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2022/html/He_ELIC_Efficient_Learned_Image_Compression_With_Unevenly_Grouped_Space-Channel_Contextual_CVPR_2022_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: window-attention-2022
+    title: 'The Devil Is in the Details: Window-Based Attention for Image Compression'
+    first_author: Renjie Zou
+    year: 2022
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2022/html/Zou_The_Devil_Is_in_the_Details_Window-Based_Attention_for_Image_CVPR_2022_paper.html
+    project_url: https://github.com/Googolxx/STF
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, entropy-model]
+    capability: []
+
+  - id: checkerboard-context-2021
+    title: Checkerboard Context Model for Efficient Learned Image Compression
+    first_author: Dailan He
+    year: 2021
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2021/html/He_Checkerboard_Context_Model_for_Efficient_Learned_Image_Compression_CVPR_2021_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: [low-complexity]
+
+  - id: soft-then-hard-2021
+    title: 'Soft Then Hard: Rethinking the Quantization in Neural Image Compression'
+    first_author: Zongyu Guo
+    year: 2021
+    venue: ICML
+    status: published
+    paper_url: https://proceedings.mlr.press/v139/guo21c.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [vq]
+    focus: [quantization]
+    capability: []
+
+  - id: cheng2020
+    title: Learned Image Compression with Discretized Gaussian Mixture Likelihoods and Attention Modules
+    first_author: Zhengxue Cheng
+    year: 2020
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Cheng_Learned_Image_Compression_With_Discretized_Gaussian_Mixture_Likelihoods_and_Attention_CVPR_2020_paper.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, entropy-model]
+    capability: []
+
+  - id: coarse-to-fine-hyperprior-2020
+    title: Coarse-to-Fine Hyper-Prior Modeling for Learned Image Compression
+    first_author: Yueyu Hu
+    year: 2020
+    venue: AAAI
+    status: published
+    paper_url: https://doi.org/10.1609/aaai.v34i07.6736
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  - id: joint-priors-2018
+    title: Joint Autoregressive and Hierarchical Priors for Learned Image Compression
+    first_author: David Minnen
+    year: 2018
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper/2018/hash/53edebc543333dfbf7c5933af792c9c4-Abstract.html
+    project_url: https://github.com/tensorflow/compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  - id: scale-hyperprior-2018
+    title: Variational Image Compression with a Scale Hyperprior
+    first_author: Johannes Balle
+    year: 2018
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=rkcQFMZRb
+    project_url: https://github.com/tensorflow/compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [entropy-model]
+    capability: []
+
+  - id: end-to-end-optimized-2017
+    title: End-to-end Optimized Image Compression
+    first_author: Johannes Balle
+    year: 2017
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=rJxdQ3jeg
+    project_url: https://github.com/tensorflow/compression
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, quantization, entropy-model]
+    capability: []
+
+  - id: compressive-autoencoders-2017
+    title: Lossy Image Compression with Compressive Autoencoders
+    first_author: Lucas Theis
+    year: 2017
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=rJiNwv9gg
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [transform]
+    focus: [transform, quantization]
+    capability: []
+
+  - id: soft-hard-vq-2017
+    title: Soft-to-Hard Vector Quantization for End-to-End Learning Compressible Representations
+    first_author: Eirikur Agustsson
+    year: 2017
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper/2017/hash/86b122d4358357d834a87ce618a55de0-Abstract.html
+    project_url: null
+    section: distortion-oriented
+    objective: distortion
+    paradigm: [vq]
+    focus: [quantization]
+    capability: []
+
+  # Additional perception-oriented coding
+  - id: diffc-gaussian-2022
+    title: Lossy Compression with Gaussian Diffusion
+    first_author: Lucas Theis
+    year: 2022
+    venue: arXiv
+    status: preprint
+    include_preprint: true
+    paper_url: https://arxiv.org/abs/2206.08889
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [optimization]
+    capability: [variable-rate, progressive]
+
+  - id: cod-lite-2026
+    title: 'CoD-Lite: Real-Time Diffusion-Based Generative Image Compression'
+    first_author: Zhaoyang Jia
+    year: 2026
+    venue: ICML
+    status: published
+    paper_url: https://icml.cc/virtual/2026/poster/63715
+    project_url: https://github.com/microsoft/GenCodec/tree/main/CoD_Lite
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: [low-complexity, practical]
+
+  - id: turbo-ddcm-2026
+    title: 'Turbo-DDCM: Fast and Flexible Zero-Shot Diffusion-Based Image Compression'
+    first_author: Amit Vaisman
+    year: 2026
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=eIF1QvC94Z
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [optimization]
+    capability: [low-complexity, practical]
+
+  - id: oscar-2025
+    title: 'OSCAR: One-Step Diffusion Codec Across Multiple Bit-rates'
+    first_author: Jinpei Guo
+    year: 2025
+    venue: NeurIPS
+    status: published
+    paper_url: https://openreview.net/forum?id=uodE9CAXaF
+    project_url: https://github.com/jp-guo/OSCAR
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: [variable-rate, low-complexity]
+
+  - id: onedc-2025
+    title: One-Step Diffusion-Based Image Compression with Semantic Distillation
+    first_author: Naifu Xue
+    year: 2025
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/352a67c085e607acdcfc0076899750f4-Abstract-Conference.html
+    project_url: https://onedc-codec.github.io/
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, quantization, optimization]
+    capability: [low-complexity]
+
+  - id: stablecodec-2025
+    title: 'StableCodec: Taming One-Step Diffusion for Extreme Image Compression'
+    first_author: Tianyu Zhang
+    year: 2025
+    venue: ICCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_StableCodec_Taming_One-Step_Diffusion_for_Extreme_Image_Compression_ICCV_2025_paper.pdf
+    project_url: https://github.com/LuizScarlet/StableCodec
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [transform, optimization]
+    capability: [low-complexity, practical]
+
+  - id: relic-uq-2025
+    title: Bridging the Gap between Gaussian Diffusion Models and Universal Quantization for Image Compression
+    first_author: Lucas Relic
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/papers/Relic_Bridging_the_Gap_between_Gaussian_Diffusion_Models_and_Universal_Quantization_CVPR_2025_paper.pdf
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: []
+
+  - id: ddcm-2025
+    title: Compressed Image Generation with Denoising Diffusion Codebook Models
+    first_author: Guy Ohayon
+    year: 2025
+    venue: ICML
+    status: published
+    paper_url: https://icml.cc/virtual/2025/poster/44687
+    project_url: https://github.com/DDCM-2025/ddcm-compressed-image-generation
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: []
+
+  - id: diffc-2025
+    title: Lossy Compression with Pretrained Diffusion Models
+    first_author: Jeremy Vonderfecht
+    year: 2025
+    venue: ICLR
+    status: published
+    paper_url: https://openreview.net/forum?id=raUnLe0Z04
+    project_url: https://github.com/JeremyIV/diffc
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [entropy-model, optimization]
+    capability: [practical]
+
+  - id: taco-2024
+    title: Neural Image Compression with Text-guided Encoding for both Pixel-level and Perceptual Fidelity
+    first_author: Hagyeong Lee
+    year: 2024
+    venue: ICML
+    status: published
+    paper_url: https://taco-nic.github.io/
+    project_url: https://taco-nic.github.io/
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: []
+
+  - id: ms-illm-2023
+    title: Improving Statistical Fidelity for Neural Image Compression with Implicit Local Likelihood Models
+    first_author: Matthew Muckley
+    year: 2023
+    venue: ICML
+    status: published
+    paper_url: https://icml.cc/virtual/2023/poster/24565
+    project_url: https://github.com/facebookresearch/NeuralCompression
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [optimization]
+    capability: []
+
+  # Lossy, perception-oriented coding
+  - id: cod-2026
+    title: 'CoD: A Diffusion Foundation Model for Image Compression'
+    first_author: Zhaoyang Jia
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Jia_CoD_A_Diffusion_Foundation_Model_for_Image_Compression_CVPR_2026_paper.html
+    project_url: https://github.com/microsoft/GenCodec/tree/main/CoD
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion, foundation-model]
+    focus: [transform, optimization]
+    capability: [low-complexity]
+
+  - id: cadc-2026
+    title: 'CADC: Content Adaptive Diffusion-Based Generative Image Compression'
+    first_author: Xihua Sheng
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Sheng_CADC_Content_Adaptive_Diffusion-Based_Generative_Image_Compression_CVPR_2026_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [quantization, optimization]
+    capability: [content-adaptive]
+
+  - id: dit-ic-2026
+    title: 'DiT-IC: Aligned Diffusion Transformer for Efficient Image Compression'
+    first_author: Junqi Shi
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Shi_DiT-IC_Aligned_Diffusion_Transformer_for_Efficient_Image_Compression_CVPR_2026_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: [low-complexity, practical]
+
+  - id: shallow-perceptual-2026
+    title: Ultra-Low Bitrate Perceptual Image Compression with Shallow Encoder
+    first_author: Tianyu Zhang
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Ultra-Low_Bitrate_Perceptual_Image_Compression_with_Shallow_Encoder_CVPR_2026_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform]
+    capability: [low-complexity]
+
+  - id: practical-lic-2026
+    title: What Matters in Practical Learned Image Compression
+    first_author: Kedar Tatwawadi
+    year: 2026
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Tatwawadi_What_Matters_in_Practical_Learned_Image_Compression_CVPR_2026_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [transform]
+    focus: [optimization]
+    capability: [low-complexity, practical, variable-rate]
+
+  - id: region-adaptive-diffusion-2025
+    title: 'Decouple Distortion from Perception: Region Adaptive Diffusion for Extreme-low Bitrate Perception Image Compression'
+    first_author: Jinchang Xu
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Xu_Decouple_Distortion_from_Perception_Region_Adaptive_Diffusion_for_Extreme-low_Bitrate_CVPR_2025_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [optimization]
+    capability: [content-adaptive]
+
+  - id: good-cheap-fast-2025
+    title: 'Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein Distortion'
+    first_author: Jona Balle
+    year: 2025
+    venue: CVPR
+    status: published
+    paper_url: https://openaccess.thecvf.com/content/CVPR2025/html/Balle_Good_Cheap_and_Fast_Overfitted_Image_Compression_with_Wasserstein_Distortion_CVPR_2025_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [overfitted]
+    focus: [optimization]
+    capability: [low-complexity]
+
+  - id: cdc-2023
+    title: Lossy Image Compression with Conditional Diffusion Models
+    first_author: Ruihan Yang
+    year: 2023
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper_files/paper/2023/hash/ccf6d8b4a1fe9d9c8192f00c713872ea-Abstract-Conference.html
+    project_url: https://github.com/buggyyang/CDC_compression
+    section: perception-oriented
+    objective: perception
+    paradigm: [diffusion]
+    focus: [transform, optimization]
+    capability: []
+
+  - id: hific-2020
+    title: High-Fidelity Generative Image Compression
+    first_author: Fabian Mentzer
+    year: 2020
+    venue: NeurIPS
+    status: published
+    paper_url: https://proceedings.neurips.cc/paper/2020/hash/8a50bae297807da9e97722a0b3fd8f27-Abstract.html
+    project_url: https://github.com/tensorflow/compression/tree/master/models/hific
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [optimization]
+    capability: []
+
+  - id: rd-perception-2019
+    title: 'Rethinking Lossy Compression: The Rate-Distortion-Perception Tradeoff'
+    first_author: Yochai Blau
+    year: 2019
+    venue: ICML
+    status: published
+    paper_url: https://proceedings.mlr.press/v97/blau19a.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [optimization]
+    capability: []
+
+  - id: extreme-gan-compression-2019
+    title: Generative Adversarial Networks for Extreme Learned Image Compression
+    first_author: Eirikur Agustsson
+    year: 2019
+    venue: ICCV
+    status: published
+    paper_url: https://openaccess.thecvf.com/content_ICCV_2019/html/Agustsson_Generative_Adversarial_Networks_for_Extreme_Learned_Image_Compression_ICCV_2019_paper.html
+    project_url: null
+    section: perception-oriented
+    objective: perception
+    paradigm: [gan]
+    focus: [quantization, optimization]
+    capability: []
