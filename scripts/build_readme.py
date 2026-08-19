@@ -27,7 +27,7 @@ SECTION_ORDER = [
 SECTIONS = {
     "surveys-benchmarks-standards": (
         "Surveys, Benchmarks & Standards",
-        "Surveys, evaluation resources, and standardization milestones for neural image compression.",
+        None,
     ),
     "lossless-near-lossless": (
         "Lossless & Near-lossless Compression",
@@ -35,11 +35,11 @@ SECTIONS = {
     ),
     "distortion-oriented": (
         "Lossy — Distortion-oriented Coding",
-        "Methods primarily optimized for rate-distortion performance using pixel-domain fidelity metrics.",
+        None,
     ),
     "perception-oriented": (
         "Lossy — Perception-oriented Coding",
-        "Methods primarily optimized for perceptual quality or the rate-distortion-perception trade-off.",
+        None,
     ),
     "other-tasks-encryption": (
         "Other tasks",
@@ -384,12 +384,11 @@ def render(data: dict, papers: list[dict]) -> str:
                 ]
             )
         else:
+            lines.extend([f"## {title}", ""])
+            if description:
+                lines.extend([description, ""])
             lines.extend(
                 [
-                    f"## {title}",
-                    "",
-                    description,
-                    "",
                     "| Models | Paper | First Author | Venue | Project |",
                     "| :--: | :---: | :--: | :--: | :--: |",
                 ]
